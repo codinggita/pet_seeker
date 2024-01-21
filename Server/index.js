@@ -145,8 +145,111 @@ console.log("/journeyr_video")
 
 
 
- app.get("/*",(req,res)=>{
-   res.status(200)
-   res.send("route not available")
+ 
 
-})
+app.use(express.json());
+
+let pets = {
+  animals: [
+    {
+      animalId: 1,
+      species: "Dog",
+      breed: "Labrador Retriever",
+      age: 2,
+      color: "Golden",
+      shelter: "Pet Haven",
+      available: true,
+      adopted: false,
+    },
+    {
+      animalId: 2,
+      species: "Cat",
+      breed: "Siamese",
+      age: 1,
+      color: "Cream",
+      shelter: "Paws Rescue",
+      available: true,
+      adopted: false,
+    },
+    {
+      animalId: 3,
+      species: "Rabbit",
+      breed: "Holland Lop",
+      age: 0.5,
+      color: "White",
+      shelter: "Bunny Paradise",
+      available: true,
+      adopted: false,
+    },
+    {
+      animalId: 4,
+      species: "Parrot",
+      breed: "African Grey",
+      age: 3,
+      color: "Grey",
+      shelter: "Feathered Friends",
+      available: true,
+      adopted: false,
+    },
+  ],
+};
+
+// GET - List all animals
+app.get("/animals", (req, res) => {
+  res.json(pets.animals);
+});
+
+// GET - Details of a specific animal by ID
+app.get("/animals/:animalId", (req, res) => {
+  const animal = pets.animals.find(
+    (a) => a.animalId === parseInt(req.params.animalId)
+  );
+  if (animal) {
+    res.json(animal);
+  } else {
+    res.status(404).send("Animal not found");
+  }
+});
+
+// POST - Add a new animal
+app.post("/animals", (req, res) => {
+  const newAnimal = req.body;
+  pets.animals.push(newAnimal);
+  res.send("Animal added");
+});
+
+// PUT - Modify information of an animal by ID
+app.put("/animals/:animalId", (req, res) => {
+  const animalIdToUpdate = parseInt(req.params.animalId);
+  const index = pets.animals.findIndex(
+    (a) => a.animalId === animalIdToUpdate
+  );
+  if (index !== -1) {
+    pets.animals[index] = {
+      ...pets.animals[index],
+      ...req.body,
+    };
+    res.send("Animal updated");
+  } else {
+    res.status(404).send("Animal not found");
+  }
+});
+
+// DELETE - Remove an animal by ID
+app.delete("/animals/:animalId", (req, res) => {
+  const animalIdToDelete = parseInt(req.params.animalId);
+  const index = pets.animals.findIndex(
+    (a) => a.animalId === animalIdToDelete
+  );
+  if (index !== -1) {
+    pets.animals.splice(index, 1);
+    res.send(`Animal with ID ${animalIdToDelete} deleted`);
+  } else {
+    res.status(404).send("Animal not found");
+  }
+});
+
+app.get("/*", (req, res) => {
+  res.send("You are on the wrong route. Here's the list of possible routes");
+});
+
