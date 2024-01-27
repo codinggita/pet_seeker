@@ -1,119 +1,125 @@
 const express = require("express");
+const mongoose = require("mongoose");
+
 const app = express();
 const port = 5000;
 
-app.listen(port, () => {
-  console.log(`App running on port ${port}`);
+// Connect to MongoDB
+
+mongoose
+.connect("mongodb+srv://pandey22pranjali:4EgFe9W8mE6FhmhK@cluster0.04vbpm9.mongodb.net/student", {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+})
+.then(() => console.log("MongoDB connected…"))
+.catch((err) => console.error("MongoDB connection error:", err));
+
+
+// Define a student schema
+const studentSchema = new mongoose.Schema({
+  uid: { type: String, required: true, unique: true },
+  semester1: { type: Number, required: true },
+  semester2: { type: Number, required: true },
+  semester3: { type: Number, required: true },
+  cgpa: { type: Number, required: true },
 });
+
+// Create a student model
+const Student = mongoose.model("Student", studentSchema);
 
 app.use(express.json());
 
-let students = {
-  data: [
-    {
-      uid: "123456",
-      semester1: 3.8,
-      semester2: 4.0,
-      semester3: 3.5,
-      cgpa: 3.9,
-    },
-    {
-      uid: "789012",
-      semester1: 3.5,
-      semester2: 3.7,
-      semester3: 3.9,
-      cgpa: 3.8,
-    },
-    {
-        uid: "567890",
-        semester1: 3.9,
-        semester2: 4.0,
-        semester3: 3.8,
-        cgpa: 3.6,
-      },
-      {
-        uid: "234567",
-        semester1: 3.7,
-        semester2: 3.5,
-        semester3: 3.6,
-        cgpa: 3.5,
-      },
-      {
-        uid: "890123",
-        semester1: 3.8,
-        semester2: 3.9,
-        semester3: 4.0,
-        cgpa: 3.9,
-      }
-  ],
-};
-
 // GET - List all students
-app.get("/students", (req, res) => {
-  res.json(students.data);
+app.get("/students", async (req, res) => {
+  try {
+    const students = await Student.find();
+    res.json(students);
+  } catch (error) {
+    res.status(500).send("Internal Server Error");
+  }
 });
 
 // GET - Details of a specific student by UID
-app.get("/students/:uid", (req, res) => {
-  const student = students.data.find((s) => s.uid === req.params.uid);
-  if (student) {
-    res.json(student);
-  } else {
-    res.status(404).send("Student not found");
+app.get("/students/:uid", async (req, res) => {
+  try {
+    const student = await Student.findOne({ uid: req.params.uid });
+    if (student) {
+      res.json(student);
+    } else {
+      res.status(404).send("Student not found");
+    }
+  } catch (error) {
+    res.status(500).send("Internal Server Error");
   }
 });
 
 // POST - Add a new student
-app.post("/students", (req, res) => {
-  const newStudent = req.body;
-  students.data.push(newStudent);
-  res.send("Student added");
-});
-
-// PUT - Modify information of a student by UID
-app.put("/students/:uid", (req, res) => {
-  const uidToUpdate = req.params.uid;
-  const index = students.data.findIndex((s) => s.uid === uidToUpdate);
-  if (index !== -1) {
-    students.data[index] = {
-      ...students.data[index],
-      ...req.body,
-    };
-    res.send("Student updated");
-  } else {
-    res.status(404).send("Student not found");
+app.post("/students", async (req, res) => {
+  try {
+    const newStudent = new Student(req.body);
+    await newStudent.save();
+    res.send("Student added");
+  } catch (error) {
+    res.status(400).send("Bad Request");
   }
 });
 
-// PATCH - Update information of a student by UID
-app.patch("/students/v1/:uid", (req, res) => {
-    const uidToUpdate = req.params.uid;
-    const index = students.data.findIndex((s) => s.uid === uidToUpdate);
-    if (index !== -1) {
-      students.data[index] = {
-        ...students.data[index],
-        ...req.body,
-     
-      };
+// PUT - Modify information of a student by UID
+app.put("/students/:uid", async (req, res) => {
+  try {
+    const updatedStudent = await Student.findOneAndUpdate(
+      { uid: req.params.uid },
+      req.body,
+      { new: true }
+    );
+    if (updatedStudent) {
       res.send("Student updated");
     } else {
       res.status(404).send("Student not found");
     }
-  });
-  
+  } catch (error) {
+    res.status(500).send("Internal Server Error");
+  }
+});
+
+// PATCH - Update information of a student by UID
+app.patch("/students/:uid", async (req, res) => {
+  try {
+    const updatedStudent = await Student.findOneAndUpdate(
+      { uid: req.params.uid },
+      req.body,
+      { new: true }
+    );
+    if (updatedStudent) {
+      res.send("Student updated");
+    } else {
+      res.status(404).send("Student not found");
+    }
+  } catch (error) {
+    res.status(500).send("Internal Server Error");
+  }
+});
 
 // DELETE - Remove a student by UID
-app.delete("/students/d1/:uid", (req, res) => {
-  const uidToDelete = req.params.uid;
-  const index = students.data.findIndex((s) => s.uid === uidToDelete);
-  if (index !== -1) {
-    students.data.splice(index, 1);
-    res.send(`Student with UID ${uidToDelete} deleted`);
-  } else {
-    res.status(404).send("Student not found");
+app.delete("/students/:uid", async (req, res) => {
+  try {
+    const deletedStudent = await Student.findOneAndDelete({
+      uid: req.params.uid,
+    });
+    if (deletedStudent) {
+      res.send(`Student with UID ${req.params.uid} deleted`);
+    } else {
+      res.status(404).send("Student not found");
+    }
+  } catch (error) {
+    res.status(500).send("Internal Server Error");
   }
 });
 
 app.get("/*", (req, res) => {
   res.send("You are on the wrong route. Here's the list of possible routes");
+});
+
+app.listen(port, () => {
+  console.log(`App running on port ${port}`);
 });
