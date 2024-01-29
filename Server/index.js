@@ -234,6 +234,22 @@ app.put("/animals/:animalId", (req, res) => {
     res.status(404).send("Animal not found");
   }
 });
+// PATCH - Update information of an animal by ID
+app.patch("/animals/:animalId", (req, res) => {
+  const animalIdToUpdate = parseInt(req.params.animalId);
+  const index = pets.animals.findIndex(
+    (a) => a.animalId === animalIdToUpdate
+  );
+  if (index !== -1) {
+    pets.animals[index] = {
+      ...pets.animals[index],
+      ...req.body,
+    };
+    res.send("Animal updated");
+  } else {
+    res.status(404).send("Animal not found");
+  }
+});
 
 // DELETE - Remove an animal by ID
 app.delete("/animals/:animalId", (req, res) => {
