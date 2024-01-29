@@ -1,20 +1,54 @@
 // App.jsx
+import { useEffect } from "react";
+import {
+  Routes,
+  Route,
+  useNavigationType,
+  useLocation,
+} from "react-router-dom";
+import Mainpage from "./pages/MainPage";
 
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Navbar from './components/Navbar.jsx';
-import Main from './components/Main.jsx';
+function App() {
+  const action = useNavigationType();
+  const location = useLocation();
+  const pathname = location.pathname;
 
-const App = () => {
+  useEffect(() => {
+    if (action !== "POP") {
+      window.scrollTo(0, 0);
+    }
+  }, [action, pathname]);
+
+  useEffect(() => {
+    let title = "";
+    let metaDescription = "";
+
+    switch (pathname) {
+      case "/":
+        title = "";
+        metaDescription = "";
+        break;
+    }
+
+    if (title) {
+      document.title = title;
+    }
+
+    if (metaDescription) {
+      const metaDescriptionTag = document.querySelector(
+        'head > meta[name="description"]'
+      );
+      if (metaDescriptionTag) {
+        metaDescriptionTag.content = metaDescription;
+      }
+    }
+  }, [pathname]);
+
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Navbar />} />
-        <Route path="/main" element={<Main />} />
-      </Routes>
-    </Router>
+    <Routes>
+      <Route path="/" element={<Mainpage />} />
+    </Routes>
   );
-};
-
+}
 export default App;
 
