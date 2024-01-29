@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Quando:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Moo+Lah+Lah:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=SF+Pro+Text:wght@400&display=swap");
+body {
+  margin: 0;
+  line-height: normal;
+}
+:root {
+  /* fonts */
+  --font-quando: Quando;
+  --default-size-body: "SF Pro Text";
+  --font-sf-pro-display: "SF Pro Display";
+  --font-moo-lah-lah: "Moo Lah Lah";
+
+  /* font sizes */
+  --font-size-xl: 20px;
+  --font-size-11xl: 30px;
+  --font-size-6xl: 25px;
+  --font-size-13xl: 32px;
+  --font-size-lgi: 19px;
+  --font-size-7xl: 26px;
+  --font-size-41xl: 60px;
+  --font-size-17xl: 36px;
+  --font-size-29xl: 48px;
+  --font-size-36xl: 55px;
+  --font-size-14xl: 33px;
+  --font-size-25xl: 44px;
+  --default-size-body-size: 17px;
+  --font-size-lg: 18px;
+  --font-size-5xl: 24px;
+  --font-size-23xl: 42px;
+  --font-size-15xl: 34px;
+  --font-size-19xl: 38px;
+  --font-size-4xl: 23px;
+
+  /* Colors */
+  --color-white: #fff;
+  --color-mediumblue: #4a04b5;
+  --color-thistle-100: #e8d6f7;
+  --color-thistle-200: #d4cfff;
+  --color-lavender-100: #f0e6f8;
+  --color-lavender-200: #f0e3fb;
+  --color-black: #000;
+  --system-materials-sm-l-thick: rgba(250, 250, 250, 0.93);
+  --label-colors-lc-l-secondary: rgba(60, 60, 67, 0.6);
+  --color-snow: #fefbfb;
+
+  /* Gaps */
+  --gap-3xl: 22px;
+  --gap-26xl: 45px;
+  --gap-151xl: 170px;
+  --gap-23xl: 42px;
+  --gap-66xl: 85px;
+  --gap-20xl: 39px;
+  --gap-19xl: 38px;
+  --gap-lgi: 19px;
+  --gap-xl: 20px;
+  --gap-30xl: 49px;
+  --gap-5xl: 24px;
+  --gap-49xl: 68px;
+  --gap-mid: 17px;
+  --gap-15xl: 34px;
+  --gap-40xl: 59px;
+  --gap-10xl: 29px;
+  --gap-3xs: 10px;
+
+  /* Paddings */
+  --padding-4xs: 9px;
+  --padding-4xl: 23px;
+  --padding-36xl: 55px;
+  --padding-7xs: 6px;
+  --padding-xl: 20px;
+  --padding-lg: 18px;
+  --padding-base: 16px;
+  --padding-13xl: 32px;
+  --padding-16xl: 35px;
+  --padding-14xl: 33px;
+  --padding-40xl: 59px;
+  --padding-10xl: 29px;
+  --padding-smi: 13px;
+  --padding-lgi: 19px;
+  --padding-mini: 15px;
+  --padding-9xs: 4px;
+  --padding-5xs: 8px;
+  --padding-8xs: 5px;
+  --padding-10xs: 3px;
+  --padding-5xl: 24px;
+
+  /* Border radiuses */
+  --br-26xl: 45px;
+  --br-mini: 15px;
+  --br-3xs: 10px;
+  --br-21xl: 40px;
+}
