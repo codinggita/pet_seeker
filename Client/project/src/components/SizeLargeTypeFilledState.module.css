@@ -1,0 +1,43 @@
+.label1 {
+  height: 24px;
+  position: relative;
+  font-size: var(--font-size-lg);
+  font-weight: 500;
+  font-family: var(--smallest-descriptor);
+  color: var(--text-primary-white);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+}
+.buttonLargeFilledEnab,
+.label {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.label {
+  cursor: pointer;
+  border: 0;
+  padding: 0 var(--padding-6xl);
+  background-color: transparent;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.buttonLargeFilledEnab {
+  flex: 1;
+  border-radius: var(--br-7xs);
+  background-color: var(--color-thistle-200);
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--padding-9xs) var(--padding-base);
+}
+.sizelargeTypefilledState {
+  height: 48px;
+  border-radius: var(--br-26xl);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}

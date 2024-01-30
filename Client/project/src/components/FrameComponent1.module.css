@@ -1,0 +1,87 @@
+.loginbutton {
+  width: 233px;
+  height: 44px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  mix-blend-mode: darken;
+}
+.textComponent {
+  width: 121px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0;
+  box-sizing: border-box;
+}
+.button29 {
+  border-radius: var(--br-21xl);
+  background-color: var(--color-lavender-100);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  padding: var(--padding-7xs) 0 var(--padding-8xs) var(--padding-15xl);
+  z-index: 2;
+}
+.backgroundRectangle {
+  align-self: stretch;
+  width: 233px;
+  position: relative;
+  border-radius: var(--br-26xl);
+  background-color: var(--text-primary-white);
+  border: 1px solid var(--color-black);
+  box-sizing: border-box;
+  z-index: 1;
+}
+.buttonFrame,
+.findYourPetBird {
+  align-self: stretch;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+.buttonFrame {
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: var(--gap-12xl);
+}
+.frameChild,
+.frameItem {
+  width: 213px;
+  height: 257px;
+  position: relative;
+  border-radius: var(--br-26xl);
+  z-index: 1;
+}
+.buttonFrameParent {
+  align-self: stretch;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: var(--gap-30xl);
+  text-align: justify;
+  font-size: var(--font-size-5xl);
+  color: var(--color-mediumblue);
+  font-family: var(--font-quando);
+}
+@media screen and (max-width: 450px) {
+  .loginbutton {
+    font-size: var(--font-size-lgi);
+  }
+  .buttonFrame {
+    gap: var(--gap-mini);
+  }
+  .buttonFrameParent {
+    gap: var(--gap-5xl);
+  }
+}

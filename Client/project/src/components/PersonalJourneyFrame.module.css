@@ -1,0 +1,132 @@
+.contactUsFrameChild {
+  height: 100px;
+  width: 100px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: none;
+}
+.contactUsFrame {
+  width: 311px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.articleFrame,
+.catsArticleFrame {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.catsArticleFrame {
+  width: 1239px;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.articleFrame {
+  width: 1320px;
+  justify-content: flex-end;
+  padding: 0 var(--padding-xl);
+  box-sizing: border-box;
+}
+.personalJourney {
+  height: 115px;
+  width: 1063px;
+  position: relative;
+  white-space: pre-wrap;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  max-width: 100%;
+  z-index: 2;
+}
+.allAboutCatsFrame {
+  width: 1202px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 var(--padding-xl);
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.gitHubInstagramCircleFaceb,
+.gitHubInstagramCircleFaceb1 {
+  align-self: stretch;
+  width: 659px;
+  position: relative;
+  border-radius: var(--br-26xl);
+  max-height: 100%;
+  object-fit: contain;
+  min-height: 392px;
+  max-width: 100%;
+}
+.gitHubInstagramCircleFaceb1 {
+  width: 665px;
+}
+.fAQsFrame,
+.personalJourneyFrame,
+.video {
+  align-self: stretch;
+  display: flex;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.video {
+  background-color: var(--color-thistle-200);
+  overflow: hidden;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: var(--padding-xl) var(--padding-lg);
+  box-sizing: border-box;
+  gap: var(--gap-20xl);
+}
+.fAQsFrame,
+.personalJourneyFrame {
+  flex-direction: column;
+  align-items: center;
+  gap: var(--gap-19xl);
+  text-align: justify;
+  font-size: var(--font-size-41xl);
+  color: var(--color-mediumblue);
+}
+.personalJourneyFrame {
+  gap: var(--gap-26xl);
+  text-align: left;
+  font-size: var(--font-size-36xl);
+  color: var(--text-primary-white);
+  font-family: var(--font-quando);
+}
+@media screen and (max-width: 1325px) {
+  .gitHubInstagramCircleFaceb,
+  .gitHubInstagramCircleFaceb1 {
+    flex: 1;
+  }
+  .video {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 1125px) {
+  .catsArticleFrame {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 800px) {
+  .personalJourney {
+    font-size: var(--font-size-29xl);
+  }
+  .fAQsFrame,
+  .video {
+    gap: var(--gap-lgi);
+  }
+  .personalJourneyFrame {
+    gap: var(--gap-3xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .personalJourney {
+    font-size: var(--font-size-17xl);
+  }
+}

@@ -1,0 +1,66 @@
+.div,
+.text {
+  position: relative;
+  letter-spacing: 0.01em;
+  line-height: 150%;
+}
+.div {
+  align-self: stretch;
+}
+.text {
+  flex: 1;
+  display: inline-block;
+  max-width: calc(100% - 36px);
+}
+.mdiArrowDropDownIcon {
+  height: 24px;
+  width: 24px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.textBlock {
+  align-self: stretch;
+  border-radius: var(--br-9xs);
+  background-color: var(--color-whitesmoke);
+  border: 1px solid var(--system-red);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-xs) var(--padding-smi) var(--padding-xs)
+    var(--padding-2xs);
+  gap: var(--gap-xs);
+  max-width: 100%;
+  color: var(--surface-light);
+}
+.errorMessage {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--smallest-descriptor-size);
+  color: var(--system-red);
+  display: none;
+}
+.selectSimpleError {
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-11xs);
+  max-width: 100%;
+}
+.typesimpleStateerror {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--text-secondary-grey2);
+  font-family: var(--smallest-descriptor);
+}

@@ -1,0 +1,37 @@
+.blankLine,
+.rehome {
+  margin: 0;
+}
+.adpot {
+  height: 72px;
+  position: relative;
+  line-height: 32px;
+  display: inline-block;
+}
+.adoptButton {
+  border-radius: var(--br-26xl);
+  background-color: var(--color-mediumblue);
+  box-shadow: -4px 4px 0#b9a2f3;
+  border: 2px solid var(--text-primary-white);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: var(--padding-base) 0 var(--padding-13xl) var(--padding-13xl);
+  text-align: left;
+  font-size: var(--font-size-36xl);
+  color: var(--text-primary-white);
+  font-family: var(--font-quando);
+}
+@media screen and (max-width: 800px) {
+  .adpot {
+    font-size: var(--font-size-25xl);
+    line-height: 26px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .adpot {
+    font-size: var(--font-size-14xl);
+    line-height: 19px;
+  }
+}

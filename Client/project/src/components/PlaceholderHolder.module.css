@@ -1,0 +1,78 @@
+.loginbutton {
+  margin: 0;
+  width: 233px;
+  height: 44px;
+  position: relative;
+  font-size: inherit;
+  font-weight: 400;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  mix-blend-mode: darken;
+}
+.loginbuttonWrapper {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0;
+  box-sizing: border-box;
+}
+.button26 {
+  border-radius: var(--br-21xl);
+  background-color: var(--color-lavender-100);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  padding: var(--padding-8xs) 0 var(--padding-7xs) var(--padding-4xl);
+}
+.frameChild {
+  height: 492px;
+  flex: 1;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+}
+.button26Parent,
+.frameWrapper,
+.placeholderHolder {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frameWrapper {
+  width: 131px;
+  flex-direction: row;
+  padding: 0 var(--padding-5xs);
+  box-sizing: border-box;
+}
+.button26Parent,
+.placeholderHolder {
+  flex-direction: column;
+}
+.button26Parent {
+  gap: var(--gap-408xl);
+}
+.placeholderHolder {
+  padding: var(--padding-xl) 0 0;
+  text-align: justify;
+  font-size: var(--font-size-5xl);
+  color: var(--color-mediumblue);
+  font-family: var(--font-quando);
+}
+@media screen and (max-width: 750px) {
+  .placeholderHolder {
+    display: none;
+  }
+}
+@media screen and (max-width: 450px) {
+  .loginbutton {
+    font-size: var(--font-size-lgi);
+  }
+}

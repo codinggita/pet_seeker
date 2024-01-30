@@ -1,0 +1,107 @@
+.petsAvailableFor {
+  height: 75px;
+  flex: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+}
+.petsAvailableForAdoptionNeWrapper {
+  width: 1307px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-xl);
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.petsFrameIcon,
+.petsFrameIcon1,
+.petsFrameIcon2,
+.petsFrameIcon3 {
+  align-self: stretch;
+  width: 265px;
+  position: relative;
+  border-radius: var(--br-26xl);
+  max-height: 100%;
+  object-fit: cover;
+  min-height: 362px;
+}
+.petsFrameIcon1,
+.petsFrameIcon2,
+.petsFrameIcon3 {
+  width: 273px;
+}
+.petsFrameIcon2,
+.petsFrameIcon3 {
+  width: 279px;
+}
+.petsFrameIcon3 {
+  width: 273px;
+}
+.adoptButton {
+  height: 44px;
+  width: 1439px;
+  position: absolute;
+  margin: 0 !important;
+  bottom: -28px;
+  left: 0;
+  background-color: var(--color-mediumblue);
+  filter: blur(4px);
+  z-index: 1;
+}
+.apiCall,
+.petsNearbyFrame {
+  align-self: stretch;
+  display: flex;
+}
+.apiCall {
+  background-color: var(--color-thistle-200);
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: var(--padding-16xl) var(--padding-14xl) var(--padding-16xl)
+    var(--padding-40xl);
+  position: relative;
+  gap: var(--gap-xl);
+}
+.petsNearbyFrame {
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: var(--gap-30xl);
+  min-height: 612px;
+  max-width: 100%;
+  text-align: justify;
+  font-size: var(--font-size-41xl);
+  color: var(--color-mediumblue);
+  font-family: var(--font-quando);
+}
+@media screen and (max-width: 1325px) {
+  .apiCall {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 800px) {
+  .petsAvailableFor {
+    font-size: var(--font-size-29xl);
+  }
+  .apiCall {
+    padding-left: var(--padding-10xl);
+    box-sizing: border-box;
+  }
+  .petsNearbyFrame {
+    gap: var(--gap-5xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .petsAvailableFor {
+    font-size: var(--font-size-17xl);
+  }
+  .apiCall {
+    padding-top: var(--padding-4xl);
+    padding-bottom: var(--padding-4xl);
+    box-sizing: border-box;
+  }
+}

@@ -1,0 +1,194 @@
+.allAboutCats,
+.blankLine,
+.blankLine1 {
+  margin: 0;
+  font-size: var(--font-size-13xl);
+}
+.catBehaviour,
+.catHealth,
+.catsBreeds,
+.feedingYourCats {
+  margin: 0;
+}
+.blankLine2 {
+  margin: 0;
+  font-size: var(--font-size-11xl);
+}
+.allAboutCatsContainer1 {
+  width: 100%;
+}
+.allAboutCatsContainer {
+  height: 308px;
+  width: 305px;
+  position: absolute;
+  margin: 0 !important;
+  top: -10px;
+  right: 332px;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+.adoptOrGet,
+.blankLine3,
+.p {
+  margin: 0;
+}
+.adoptingPet,
+.animalSheltersAnd {
+  margin: 0;
+  font-size: var(--font-size-6xl);
+}
+.blankLine4 {
+  margin: 0;
+}
+.blankLine5 {
+  margin: 0;
+  font-size: var(--font-size-11xl);
+}
+.adoptOrGetContainer1 {
+  width: 100%;
+}
+.adoptOrGetContainer {
+  height: 430px;
+  width: 236px;
+  position: absolute;
+  margin: 0 !important;
+  top: -62px;
+  right: 24px;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+  font-size: var(--font-size-13xl);
+}
+.frequentlyAskedQuestionsChild {
+  height: 333px;
+  width: 1440px;
+  position: relative;
+  background-color: var(--color-mediumblue);
+  display: none;
+  max-width: 100%;
+}
+.blankLine6,
+.resources {
+  margin: 0;
+  font-size: var(--font-size-13xl);
+}
+.blankLine7 {
+  margin: 0;
+  font-size: var(--font-size-11xl);
+}
+.aboutUs,
+.contactUs,
+.faqs,
+.forDevelopers,
+.newsCentre,
+.partnership {
+  margin: 0;
+}
+.resourcesFaqsContactContainer1 {
+  width: 100%;
+}
+.resourcesFaqsContactContainer {
+  height: 269px;
+  width: 216px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  min-width: 216px;
+  z-index: 1;
+}
+.allAboutDogs,
+.blankLine8,
+.blankLine9 {
+  margin: 0;
+  font-size: var(--font-size-13xl);
+}
+.dogBehaviour,
+.dogHealth,
+.dogsBreeds,
+.feedingYourDogs {
+  margin: 0;
+}
+.blankLine10 {
+  margin: 0;
+  font-size: var(--font-size-11xl);
+}
+.allAboutDogsContainer,
+.articlesAboutDogs {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.allAboutDogsContainer {
+  height: 243px;
+  flex: 1;
+  z-index: 1;
+}
+.articlesAboutDogs {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: center;
+}
+.partnership1 {
+  width: 305px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-7xs) 0 0;
+  box-sizing: border-box;
+  min-width: 305px;
+}
+.adoptAndGetInvolved,
+.frequentlyAskedQuestions {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.frequentlyAskedQuestions {
+  flex: 1;
+  background-color: var(--color-mediumblue);
+  align-items: center;
+  padding: var(--padding-4xs) var(--padding-4xl) var(--padding-36xl);
+  box-sizing: border-box;
+  gap: var(--gap-151xl);
+}
+.adoptAndGetInvolved {
+  align-self: stretch;
+  align-items: flex-start;
+  position: relative;
+  text-align: justify;
+  font-size: var(--font-size-6xl);
+  color: var(--text-primary-white);
+  font-family: var(--font-quando);
+}
+@media screen and (max-width: 800px) {
+  .adoptOrGetContainer {
+    font-size: var(--font-size-7xl);
+  }
+  .partnership1,
+  .resourcesFaqsContactContainer {
+    flex: 1;
+  }
+  .frequentlyAskedQuestions {
+    flex-wrap: wrap;
+    gap: var(--gap-66xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .allAboutCatsContainer {
+    font-size: var(--font-size-xl);
+  }
+  .adoptOrGetContainer {
+    font-size: var(--font-size-lgi);
+  }
+  .allAboutDogsContainer,
+  .resourcesFaqsContactContainer {
+    font-size: var(--font-size-xl);
+  }
+  .frequentlyAskedQuestions {
+    gap: var(--gap-23xl);
+  }
+}

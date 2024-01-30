@@ -1,0 +1,481 @@
+.blankLine,
+.blankLine1,
+.blankLine2,
+.whatsYourPerfect {
+  margin: 0;
+}
+.whatsYourPerfectContainer {
+  position: absolute;
+  top: 0;
+  left: 9px;
+  line-height: 54px;
+  display: inline-block;
+  width: 168px;
+  height: 38px;
+  z-index: 1;
+}
+.howWouldYou {
+  margin: 0;
+}
+.howWouldYouContainer {
+  flex: 1;
+  position: relative;
+  line-height: 34px;
+  display: inline-block;
+  max-width: 100%;
+  z-index: 1;
+}
+.findYourMate {
+  margin: 0 !important;
+  height: 238px;
+  width: 536px;
+  position: absolute;
+  top: -204px;
+  right: -128px;
+  font-size: var(--font-size-41xl);
+  font-weight: 400;
+  font-family: inherit;
+  text-align: justify;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+}
+.frameSizeLabel,
+.preferredActivitiesFrame {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.preferredActivitiesFrame {
+  flex: 1;
+  position: relative;
+}
+.frameSizeLabel {
+  align-self: stretch;
+  padding: 0 0 0 var(--padding-10xs);
+  box-sizing: border-box;
+}
+.aoutdoorAdventuresAnd,
+.bcozyingUpWith,
+.cexploringNatureOr {
+  position: relative;
+  z-index: 1;
+}
+.sizePreferenceFrame,
+.whatIsYourPerfectPetQuest {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.sizePreferenceFrame {
+  padding: 0 var(--padding-xl) 0 0;
+  gap: var(--gap-11xs);
+  text-align: justify;
+}
+.whatIsYourPerfectPetQuest {
+  position: absolute;
+  top: 26px;
+  left: 0;
+  width: 100%;
+  gap: var(--gap-4xs);
+  max-width: 100%;
+}
+.bMinimalGroomingEffortLabe {
+  align-self: stretch;
+  height: 116px;
+  position: relative;
+  max-width: 100%;
+  text-align: left;
+}
+.whatSizeOf {
+  margin: 0;
+}
+.whatSizeOfContainer {
+  align-self: stretch;
+  height: 40px;
+  position: relative;
+  line-height: 54px;
+  text-align: left;
+  display: inline-block;
+  flex-shrink: 0;
+  z-index: 1;
+}
+.alargeAndEnergetic,
+.bsmallAndCuddly,
+.cmediumSizedAndGraceful {
+  width: 139px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-right: var(--padding-xl);
+  z-index: 1;
+}
+.bsmallAndCuddly,
+.cmediumSizedAndGraceful {
+  width: 124px;
+}
+.cmediumSizedAndGraceful {
+  width: 177px;
+  z-index: 2;
+}
+.petSizeSelection {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 0 0 var(--padding-10xs);
+  gap: var(--gap-12xs);
+}
+.whatTypeOf {
+  margin: 0;
+}
+.whatTypeOfContainer {
+  align-self: stretch;
+  height: 40px;
+  position: relative;
+  line-height: 54px;
+  text-align: left;
+  display: inline-block;
+  flex-shrink: 0;
+  padding-left: var(--padding-10xs);
+  z-index: 1;
+}
+.aloyalAndPlayful {
+  width: 124px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-right: var(--padding-xl);
+  z-index: 1;
+}
+.aLoyalAndPlayful {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-10xs);
+}
+.bindependentAndMysterious {
+  width: 185px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-right: var(--padding-xl);
+  z-index: 1;
+}
+.aLoyalAndPlayful1 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-10xs);
+}
+.cintelligentAndCurious {
+  width: 153px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-right: var(--padding-xl);
+  z-index: 1;
+}
+.aLoyalAndPlayful2 {
+  align-self: stretch;
+  height: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-10xs);
+  box-sizing: border-box;
+}
+.howMuchTime {
+  margin: 0;
+}
+.howMuchTimeContainer {
+  position: absolute;
+  top: 0;
+  left: 3px;
+  line-height: 54px;
+  text-align: left;
+  display: inline-block;
+  width: 378px;
+  height: 40px;
+  z-index: 1;
+}
+.aiEnjoyGrooming,
+.bminimalGroomingEffort,
+.ciDontMind {
+  position: absolute;
+  top: 35px;
+  left: 3px;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+}
+.bminimalGroomingEffort,
+.ciDontMind {
+  top: 50px;
+  z-index: 1;
+}
+.ciDontMind {
+  top: 63px;
+  left: 2px;
+  z-index: 2;
+}
+.aLoyalAndPlayful3 {
+  align-self: stretch;
+  height: 80px;
+  position: relative;
+}
+.yourIdealPet {
+  margin: 0;
+}
+.yourIdealPetContainer {
+  align-self: stretch;
+  height: 40px;
+  position: relative;
+  line-height: 54px;
+  text-align: left;
+  display: inline-block;
+  flex-shrink: 0;
+  padding-left: var(--padding-10xs);
+  z-index: 1;
+}
+.aprotectingTheFamily {
+  width: 305px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-right: var(--padding-xl);
+  z-index: 1;
+}
+.aLoyalAndPlayful4 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-10xs);
+}
+.bbeingAffectionateAnd {
+  width: 258px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-right: var(--padding-xl);
+  z-index: 2;
+}
+.aLoyalAndPlayful5 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-10xs);
+}
+.cdisplayingColourfulPlumage {
+  width: 338px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  padding-right: var(--padding-xl);
+  z-index: 3;
+}
+.aLoyalAndPlayful6 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-10xs);
+  box-sizing: border-box;
+  min-height: 23px;
+  max-width: 100%;
+}
+.whatsYourOpinion {
+  margin: 0;
+}
+.whatsYourOpinionContainer {
+  align-self: stretch;
+  height: 40px;
+  position: relative;
+  line-height: 54px;
+  text-align: left;
+  display: inline-block;
+  flex-shrink: 0;
+  z-index: 1;
+}
+.aiEnjoyTraining {
+  position: relative;
+  z-index: 2;
+}
+.biPreferA,
+.ciLikeA {
+  position: relative;
+  z-index: 1;
+}
+.aLoyalAndPlayful7,
+.timeWillingnessLabel {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.aLoyalAndPlayful7 {
+  align-items: flex-start;
+  padding: 0 0 0 var(--padding-11xs);
+}
+.timeWillingnessLabel {
+  align-items: flex-end;
+  max-width: 100%;
+}
+.whenItComes {
+  margin: 0;
+}
+.whenItComesContainer {
+  align-self: stretch;
+  height: 40px;
+  line-height: 54px;
+  text-align: left;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.asomeBarkingIs,
+.whenItComesContainer {
+  position: relative;
+  z-index: 1;
+}
+.barkingOrQuiet {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-9xs);
+}
+.baQuietAnd {
+  position: relative;
+  z-index: 1;
+}
+.barkingOrQuiet1 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-8xs);
+}
+.cenjoyingTheSounds {
+  position: relative;
+  z-index: 2;
+}
+.barkingOrQuiet2,
+.quietEnvironment {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-8xs);
+}
+.quietEnvironment {
+  align-self: stretch;
+  flex-direction: column;
+  padding: 0 0 0 var(--padding-10xs);
+  box-sizing: border-box;
+  gap: var(--gap-12xs);
+  min-height: 163px;
+}
+.label1 {
+  height: 24px;
+  position: relative;
+  font-size: var(--font-size-lg);
+  font-weight: 500;
+  font-family: var(--smallest-descriptor);
+  color: var(--text-primary-white);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.buttonLargeFilledEnab,
+.label {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.buttonLargeFilledEnab {
+  flex: 1;
+  border-radius: var(--br-7xs);
+  background-color: var(--color-thistle-200);
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--padding-9xs) var(--padding-2xs);
+}
+.selectlargefilledenabled {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  align-self: stretch;
+  border-radius: var(--br-26xl);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  z-index: 1;
+}
+.intelligentAndCuriousOption,
+.largeFilledEnabledButton {
+  display: flex;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+.largeFilledEnabledButton {
+  height: 48px;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0 var(--padding-57xl);
+}
+.intelligentAndCuriousOption {
+  width: 381px;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: var(--padding-xl) 0;
+  gap: var(--gap-lgi);
+  min-width: 381px;
+  max-width: 100%;
+  text-align: justify;
+  font-size: var(--font-size-3xs);
+  color: var(--text-primary-white);
+  font-family: var(--font-quando);
+}
+@media screen and (max-width: 975px) {
+  .findYourMate {
+    font-size: var(--font-size-29xl);
+  }
+}
+@media screen and (max-width: 725px) {
+  .intelligentAndCuriousOption {
+    flex: 1;
+  }
+}
+@media screen and (max-width: 450px) {
+  .findYourMate {
+    font-size: var(--font-size-17xl);
+  }
+  .largeFilledEnabledButton {
+    padding-left: var(--padding-xl);
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
+  }
+  .intelligentAndCuriousOption {
+    min-width: 100%;
+  }
+}
