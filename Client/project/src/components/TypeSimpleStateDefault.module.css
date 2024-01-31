@@ -1,0 +1,38 @@
+.div {
+  align-self: stretch;
+  position: relative;
+  letter-spacing: 0.01em;
+  line-height: 150%;
+}
+.textBlock,
+.typesimpleStatedefault {
+  display: flex;
+  justify-content: flex-start;
+  font-size: var(--font-size-base);
+  font-family: var(--smallest-descriptor);
+}
+.textBlock {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  background-color: var(--color-whitesmoke);
+  align-self: stretch;
+  height: 48px;
+  border-radius: var(--br-9xs);
+  flex-direction: row;
+  align-items: center;
+  padding: var(--padding-xs);
+  box-sizing: border-box;
+  color: var(--surface-light);
+  min-width: 250px;
+}
+.typesimpleStatedefault {
+  flex: 1;
+  overflow: hidden;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--gap-11xs);
+  max-width: 100%;
+  text-align: left;
+  color: var(--text-secondary-grey2);
+}

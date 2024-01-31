@@ -1,0 +1,47 @@
+.div,
+.text {
+  position: relative;
+  letter-spacing: 0.01em;
+  line-height: 150%;
+}
+.div {
+  align-self: stretch;
+}
+.text {
+  flex: 1;
+  display: inline-block;
+  max-width: calc(100% - 36px);
+}
+.mdiArrowDropDownIcon {
+  height: 24px;
+  width: 24px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.textBlock,
+.typerequiredStatedefault {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.textBlock {
+  border-radius: var(--br-9xs);
+  background-color: var(--color-whitesmoke);
+  flex-direction: row;
+  padding: var(--padding-xs);
+  box-sizing: border-box;
+  gap: var(--gap-xs);
+  color: var(--surface-light);
+}
+.typerequiredStatedefault {
+  overflow: hidden;
+  flex-direction: column;
+  gap: var(--gap-11xs);
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--text-secondary-grey2);
+  font-family: var(--smallest-descriptor);
+}

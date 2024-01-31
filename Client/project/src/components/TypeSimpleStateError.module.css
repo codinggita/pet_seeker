@@ -1,0 +1,85 @@
+.div {
+  align-self: stretch;
+  position: relative;
+  letter-spacing: 0.01em;
+  line-height: 150%;
+}
+.mdiArrowDropDownIcon,
+.text {
+  height: 24px;
+  position: relative;
+}
+.text {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  font-family: var(--smallest-descriptor);
+  font-size: var(--font-size-base);
+  background-color: transparent;
+  flex: 1;
+  letter-spacing: 0.01em;
+  line-height: 150%;
+  color: var(--surface-light);
+  text-align: left;
+  display: flex;
+  align-items: center;
+  min-width: 240px;
+  max-width: 100%;
+}
+.mdiArrowDropDownIcon {
+  width: 24px;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: none;
+  min-height: 24px;
+}
+.textBlock {
+  align-self: stretch;
+  border-radius: var(--br-9xs);
+  background-color: var(--color-whitesmoke);
+  border: 1px solid var(--system-red);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-xs) var(--padding-29xl) var(--padding-xs)
+    var(--padding-xs);
+  gap: var(--gap-3xs);
+  max-width: 100%;
+}
+.errorMessage {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--smallest-descriptor-size);
+  color: var(--system-red);
+  display: none;
+}
+.selectSimpleError {
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-11xs);
+  max-width: 100%;
+}
+.typesimpleStateerror {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--text-secondary-grey2);
+  font-family: var(--smallest-descriptor);
+}
+@media screen and (max-width: 450px) {
+  .textBlock {
+    padding-right: var(--padding-5xl);
+    box-sizing: border-box;
+  }
+}

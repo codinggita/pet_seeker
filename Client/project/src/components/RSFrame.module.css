@@ -1,0 +1,311 @@
+.rs2001 {
+  margin: 0;
+}
+.rs200Txt {
+  line-break: anywhere;
+}
+.label1,
+.rs200 {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.rs200 {
+  align-self: stretch;
+  height: 150px;
+  z-index: 2;
+}
+.label1 {
+  height: 24px;
+  font-size: var(--font-size-lg);
+  font-weight: 500;
+  font-family: var(--smallest-descriptor);
+  color: var(--text-primary-white);
+  text-align: center;
+  justify-content: center;
+}
+.buttonLargeFilledEnab,
+.label {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 var(--padding-xl);
+}
+.buttonLargeFilledEnab {
+  align-self: stretch;
+  flex: 1;
+  border-radius: var(--br-7xs);
+  background-color: var(--color-plum);
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--padding-9xs) var(--padding-base);
+}
+.rs200Parent,
+.selectlargefilledenabled {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.selectlargefilledenabled {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: var(--color-thistle-200);
+  width: 154px;
+  height: 48px;
+  border-radius: var(--br-26xl);
+  align-items: flex-start;
+  z-index: 2;
+}
+.rs200Parent {
+  width: 260px;
+  align-items: center;
+  gap: var(--gap-10xs);
+  color: var(--color-blueviolet-200);
+}
+.rs5001 {
+  margin: 0;
+}
+.rs500Txt {
+  line-break: anywhere;
+}
+.label3,
+.rs500 {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.rs500 {
+  align-self: stretch;
+  height: 150px;
+  z-index: 2;
+}
+.label3 {
+  height: 24px;
+  font-size: var(--font-size-lg);
+  font-family: var(--smallest-descriptor);
+  color: var(--text-primary-white);
+  text-align: center;
+  justify-content: center;
+}
+.buttonLargeFilledEnab1,
+.label2 {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 var(--padding-6xl);
+}
+.buttonLargeFilledEnab1 {
+  flex: 1;
+  border-radius: var(--br-7xs);
+  background-color: var(--color-plum);
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--padding-9xs) var(--padding-base);
+}
+.selectlargefilledenabled1,
+.selectlargefilledenabledWrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.selectlargefilledenabled1 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: var(--color-thistle-200);
+  align-self: stretch;
+  border-radius: var(--br-26xl);
+  flex-direction: column;
+  z-index: 2;
+}
+.selectlargefilledenabledWrapper {
+  height: 48px;
+  flex-direction: row;
+  padding: 0 var(--padding-11xl) 0 0;
+  box-sizing: border-box;
+}
+.rs500Parent {
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-7xs);
+}
+.rs10001 {
+  margin: 0;
+}
+.rs1000Txt {
+  line-break: anywhere;
+}
+.label5,
+.rs1000 {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.rs1000 {
+  align-self: stretch;
+  height: 150px;
+  z-index: 2;
+}
+.label5 {
+  height: 24px;
+  font-size: var(--font-size-lg);
+  font-weight: 500;
+  font-family: var(--smallest-descriptor);
+  color: var(--text-primary-white);
+  text-align: center;
+  justify-content: center;
+}
+.buttonLargeFilledEnab2,
+.label4 {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 var(--padding-xl);
+}
+.buttonLargeFilledEnab2 {
+  align-self: stretch;
+  flex: 1;
+  border-radius: var(--br-7xs);
+  background-color: var(--color-plum);
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--padding-9xs) var(--padding-base);
+}
+.selectlargefilledenabled2 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: var(--color-thistle-200);
+  align-self: stretch;
+  flex: 1;
+  border-radius: var(--br-26xl);
+  flex-direction: column;
+  z-index: 2;
+}
+.petDonationButton,
+.selectLargeFilledEnabled,
+.selectlargefilledenabled2 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.selectLargeFilledEnabled {
+  width: 252px;
+  height: 48px;
+  flex-direction: row;
+  padding: 0 var(--padding-30xl);
+  box-sizing: border-box;
+}
+.petDonationButton {
+  width: 339px;
+  flex-direction: column;
+  max-width: 100%;
+}
+.frameParent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+  max-width: 100%;
+}
+.loginbutton {
+  width: 233px;
+  height: 44px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  mix-blend-mode: darken;
+}
+.loginButtonFrame {
+  width: 121px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0;
+  box-sizing: border-box;
+}
+.button33 {
+  border-radius: var(--br-21xl);
+  background-color: var(--color-lavender-100);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  padding: var(--padding-7xs) 0 var(--padding-8xs) var(--padding-15xl);
+}
+.anotherFrame,
+.rSFrame {
+  display: flex;
+  justify-content: flex-start;
+}
+.anotherFrame {
+  width: 261px;
+  flex-direction: row;
+  align-items: flex-start;
+  font-size: var(--font-size-5xl);
+  color: var(--color-mediumblue);
+}
+.rSFrame {
+  align-self: stretch;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--gap-79xl);
+  max-width: 100%;
+  flex-shrink: 0;
+  text-align: justify;
+  font-size: var(--font-size-41xl);
+  color: var(--color-blueviolet-100);
+  font-family: var(--font-quando);
+}
+@media screen and (max-width: 1050px) {
+  .frameParent {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .rs1000,
+  .rs200,
+  .rs500 {
+    font-size: var(--font-size-29xl);
+  }
+}
+@media screen and (max-width: 725px) {
+  .rSFrame {
+    gap: var(--gap-30xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .rs1000,
+  .rs200,
+  .rs500 {
+    font-size: var(--font-size-17xl);
+  }
+  .selectLargeFilledEnabled {
+    padding-left: var(--padding-xl);
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
+  }
+  .loginbutton {
+    font-size: var(--font-size-lgi);
+  }
+  .rSFrame {
+    gap: var(--gap-5xl);
+  }
+}

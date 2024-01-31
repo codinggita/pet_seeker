@@ -1,0 +1,23 @@
+.adoptAPet {
+  height: 238px;
+  flex: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+}
+.adoptAPetAndFindYourNew {
+  width: 1107px;
+  margin: 0 !important;
+  position: absolute;
+  top: -229px;
+  right: -271px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+  font-size: var(--font-size-41xl);
+  color: var(--color-mediumblue);
+  font-family: var(--font-quando);
+}

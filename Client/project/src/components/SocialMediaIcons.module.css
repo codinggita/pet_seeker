@@ -1,0 +1,43 @@
+.facebookIcon,
+.githubIcon,
+.googlePlusIcon,
+.instagramCircleIcon {
+  position: absolute;
+  height: 65.52%;
+  width: 21.13%;
+  top: 17.24%;
+  right: 27.47%;
+  bottom: 17.24%;
+  left: 51.4%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.facebookIcon,
+.githubIcon,
+.instagramCircleIcon {
+  right: 39.49%;
+  left: 39.38%;
+  z-index: 1;
+}
+.githubIcon,
+.instagramCircleIcon {
+  right: 52.58%;
+  left: 26.29%;
+  z-index: 2;
+}
+.githubIcon {
+  right: 64.45%;
+  left: 14.42%;
+  z-index: 3;
+}
+.component1 {
+  height: 116px;
+  width: 778px;
+  position: absolute;
+  margin: 0 !important;
+  right: -423px;
+  bottom: -78px;
+  z-index: 2;
+}
