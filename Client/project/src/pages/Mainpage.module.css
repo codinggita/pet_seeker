@@ -1,0 +1,227 @@
+.headerBar {
+  width: 100%;
+  height: 44px;
+  position: absolute;
+  margin: 0 !important;
+  top: 956px;
+  right: 0;
+  left: 0;
+  background-color: var(--color-mediumblue);
+  filter: blur(4px);
+  border: 1px solid var(--color-mediumblue);
+  box-sizing: border-box;
+  flex-shrink: 0;
+  z-index: 2;
+}
+.fRAMEA {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-6xl);
+  min-height: 749px;
+  max-width: 100%;
+}
+.mainpageChild,
+.mainpageItem {
+  width: 100%;
+  height: 44px;
+  right: 0;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.mainpageChild {
+  position: absolute;
+  margin: 0 !important;
+  bottom: 1302px;
+  z-index: 1;
+}
+.mainpageItem {
+  bottom: 1772px;
+}
+.frameChild,
+.headerBar1,
+.mainpageItem {
+  position: absolute;
+  margin: 0 !important;
+  z-index: 1;
+}
+.headerBar1 {
+  width: 100%;
+  height: 44px;
+  top: 1287px;
+  right: 0;
+  left: 0;
+  background-color: var(--color-mediumblue);
+  filter: blur(4px);
+  flex-shrink: 0;
+}
+.frameChild {
+  width: 1455px;
+  top: -436px;
+  left: -288px;
+  height: 557px;
+  object-fit: cover;
+}
+.frameItem {
+  align-self: stretch;
+  height: 269px;
+  position: relative;
+  border-radius: var(--br-26xl);
+  max-width: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+  z-index: 3;
+}
+.rectangleWrapper {
+  width: 301px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-smi) 0 0;
+  box-sizing: border-box;
+  min-width: 196px;
+}
+.frameInner,
+.rectangleIcon {
+  height: 269px;
+  width: 288px;
+  position: relative;
+  border-radius: var(--br-26xl);
+  object-fit: cover;
+  min-height: 269px;
+  z-index: 3;
+}
+.frameParent {
+  flex: 1;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-17xl);
+}
+.contentFrame,
+.frameParent,
+.rectangleParent {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+}
+.rectangleParent {
+  width: 949px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.contentFrame {
+  width: 1074px;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 var(--padding-xl);
+  box-sizing: border-box;
+}
+.articlesToTake {
+  align-self: stretch;
+  height: 115px;
+  position: relative;
+  white-space: pre-wrap;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.resourcesSectionIcon,
+.resourcesSectionIcon1 {
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  border-radius: var(--br-26xl);
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+  min-width: 361px;
+  min-height: 659px;
+}
+.infoFrame {
+  align-self: stretch;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 125px;
+}
+.articlesFrame,
+.infoFrame,
+.videoFrame {
+  display: flex;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.articlesFrame {
+  width: 1255px;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 27px;
+}
+
+
+.videoFrame {
+  width: 1346px;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 0 var(--padding-xl);
+  box-sizing: border-box;
+  text-align: justify;
+  font-size: var(--font-size-41xl);
+  color: var(--color-mediumblue);
+  font-family: var(--font-quando);
+}
+.mainpage {
+  width: 100%;
+  position: relative;
+  background-color: var(--text-primary-white);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 90px;
+  letter-spacing: normal;
+}
+@media screen and (max-width: 1325px) {
+  .infoFrame {
+    gap: 62px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .frameParent {
+    gap: var(--gap-lg);
+  }
+  .articlesToTake {
+    font-size: var(--font-size-29xl);
+  }
+  .infoFrame {
+    gap: var(--gap-12xl);
+  }
+  .mainpage {
+    gap: var(--gap-26xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .articlesToTake {
+    font-size: var(--font-size-17xl);
+  }
+  .resourcesSectionIcon,
+  .resourcesSectionIcon1 {
+    min-width: 100%;
+  }
+  .infoFrame {
+    gap: 16px;
+  }
+  .mainpage {
+    gap: var(--gap-3xl);
+  }
+}

@@ -3,7 +3,8 @@ import AdoptPet from "../components/AdoptPet";
 import BackgroundFrames from "../components/BackgroundFrames";
 import PersonalJourneyFrame from "../components/PersonalJourneyFrame";
 import Footer from "../components/Footer";
-import styles from "./pages.css";
+import styles from "./Mainpage.module.css";
+import {Link } from 'react-router-dom';
 
 const Mainpage = () => {
   return (
@@ -35,25 +36,35 @@ const Mainpage = () => {
           />
           <div className={styles.frameParent}>
             <div className={styles.rectangleWrapper}>
+
+              <Link to = "/dogs-page">
               <img
                 className={styles.frameItem}
                 loading="eager"
                 alt=""
                 src="/rectangle-7@2x.png"
               />
-            </div>
-            <img
-              className={styles.frameInner}
-              loading="eager"
-              alt=""
-              src="/rectangle-8@2x.png"
-            />
-            <img
-              className={styles.rectangleIcon}
-              loading="eager"
-              alt=""
-              src="/rectangle-9@2x.png"
-            />
+              </Link>
+              </div>
+          
+            
+              <Link to="/cats-page">
+              <img
+                className={styles.frameInner}
+                loading="eager"
+                alt=""
+                src="/rectangle-8@2x.png"
+              />
+            </Link>
+            <Link to="/bird-page">
+              <img
+                className={styles.rectangleIcon}
+                loading="eager"
+                alt=""
+                src="/rectangle-9@2x.png"
+              />
+            </Link>
+             
           </div>
         </div>
       </section>
@@ -66,18 +77,42 @@ const Mainpage = () => {
             Articles To Take Care Of Your Pets
           </div>
           <div className={styles.infoFrame}>
-            <img
-              className={styles.resourcesSectionIcon}
-              loading="eager"
-              alt=""
-              src="/rectangle-24@2x.png"
-            />
-            <img
-              className={styles.resourcesSectionIcon1}
-              loading="eager"
-              alt=""
-              src="/rectangle-25@2x.png"
-            />
+              {/* Link to Forbes pet care tips */}
+             
+          
+              <a
+              href="https://www.dailypaws.com/cats-kittens/health-care/ways-to-keep-your-cat-healthy"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                style={{ width: '550px', height: '625px' }}
+                loading="eager"
+                alt=""
+                src="/rectangle-24@2x.png"
+              />
+            </a>
+            {/* Link to Forbes pet care tips */}
+            <a
+              href="https://www.forbes.com/advisor/pet-insurance/pet-care/dog-care-tips/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                style={{ width: '550px', height: '625px' }}
+                loading="eager"
+                alt=""
+                src="/rectangle-25@2x.png"
+              />
+            </a>
+
+
+
+
+
+
+
+
           </div>
         </div>
       </section>

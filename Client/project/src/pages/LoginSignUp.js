@@ -5,7 +5,7 @@ import TypeRequiredStateDefault1 from "../components/TypeRequiredStateDefault1";
 import TypeRequiredStateDefault from "../components/TypeRequiredStateDefault";
 import SizeLargeTypeFilledState1 from "../components/SizeLargeTypeFilledState1";
 import SizeLargeTypeFilledState from "../components/SizeLargeTypeFilledState";
-import styles from "./pages.css";
+import styles from "./LoginSignUp.module.css";
 
 const LoginSignUp = () => {
   return (
