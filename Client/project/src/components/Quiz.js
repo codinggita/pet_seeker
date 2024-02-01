@@ -1,5 +1,7 @@
-import FrameComponent from "./FrameComponent";
-import styles from "./Quiz.module.css";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import FrameComponent from './FrameComponent';
+import styles from './Quiz.module.css';
 
 const Quiz = () => {
   return (
@@ -12,7 +14,10 @@ const Quiz = () => {
             <div className={styles.loginButtonLabel}>
               <div className={styles.button25}>
                 <div className={styles.frameWhatType}>
-                  <h1 className={styles.loginbutton}>Back to Home</h1>
+                  {/* Use Link to navigate to the '/answer-to-quiz' route */}
+                  <Link to="/" className={styles.loginbutton}>
+                    Back to Home
+                  </Link>
                 </div>
               </div>
             </div>
@@ -23,7 +28,10 @@ const Quiz = () => {
               src="/paw-group.svg"
             />
           </div>
-          <FrameComponent />
+          {/* Wrap the content of FrameComponent with Link */}
+          <Link to="/answer-to-quiz">
+            <FrameComponent />
+          </Link>
         </div>
       </div>
       <img
