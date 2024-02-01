@@ -83,9 +83,4 @@ Footer
 
 https://documenter.getpostman.com/view/32353864/2s9YymFPVM
 
-**Render Link**
-https://practice-render-jsss.onrender.com
-
-**Netlify link**
-https://petseeker.netlify.app/
 
