@@ -152,6 +152,38 @@
   padding: 0 var(--padding-lgi);
   box-sizing: border-box;
 }
+/* AdoptPet.module.css */
+
+/* ... your existing styles ... */
+
+.searchResults {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 10;
+  display: none;
+}
+
+.searchResults.active {
+  display: block;
+}
+
+.petItem {
+  list-style: none;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.petItem:hover {
+  background-color: #f0f0f0;
+}
+
 @media screen and (max-width: 1125px) {
   .frameE {
     flex-wrap: wrap;
