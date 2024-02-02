@@ -6,12 +6,8 @@
 body {
   margin: 0;
   line-height: normal;
-  overflow: hidden;
 }
 :root {
-     
-
-
   /* fonts */
   --font-quando: Quando;
   --smallest-descriptor: "IBM Plex Sans";
