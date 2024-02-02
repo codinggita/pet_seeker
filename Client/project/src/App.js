@@ -7,13 +7,14 @@ import {
 } from "react-router-dom";
 import Mainpage from "./pages/Mainpage";
 import LoginSignUp from "./pages/LoginSignUp";
-/*import BirdPage from "./pages/BirdPage";
+import BirdPage from "./pages/BirdPage";
 import AnswerToQuiz from "./pages/AnswerToQuiz";
 import Donate from "./pages/Donate";
 import CatsPage from "./pages/CatsPage";
 import DOGSPage from "./pages/DOGSPage";
 import ADOPTFORM from "./pages/ADOPTFORM";
-import Rehome from "./pages/Rehome";*/
+import Rehome from "./pages/Rehome";
+import Quiz from "./components/Quiz";
 
 function App() {
   const action = useNavigationType();
@@ -43,7 +44,7 @@ function App() {
         title = "";
         metaDescription = "";
         break;
-      /*case "/bird-page":
+      case "/bird-page":
         title = "";
         metaDescription = "";
         break;
@@ -70,7 +71,7 @@ function App() {
       case "/rehome":
         title = "";
         metaDescription = "";
-        break;*/
+        break;
     }
 
     if (title) {
@@ -92,8 +93,18 @@ function App() {
     <Routes>
       <Route path="/" element={<Mainpage />} />
       <Route path="/login-signup" element={<LoginSignUp />} />
-      </Routes>
+      <Route path="/bird-page" element={<BirdPage />} />
+      <Route path="/quiz" element={<Quiz />}/>
+      <Route path="/answer-to-quiz" element={<AnswerToQuiz />} />
+      <Route path="/donate" element={<Donate />} />
+      <Route path="/cats-page" element={<CatsPage />} />
+      <Route path="/dogs-page" element={<DOGSPage />} />
+      <Route path="/adopt-form" element={<ADOPTFORM />} />
+      <Route path="/rehome" element={<Rehome />} />
+    </Routes>
     </div>
   );
 }
 export default App;
+
+
