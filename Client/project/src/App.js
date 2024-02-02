@@ -72,6 +72,10 @@ function App() {
         title = "";
         metaDescription = "";
         break;
+
+       default 
+       :  console.log("No match for this path");
+       break;
     }
 
     if (title) {

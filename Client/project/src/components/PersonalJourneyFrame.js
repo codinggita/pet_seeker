@@ -50,9 +50,9 @@ const PersonalJourneyFrame = () => {
               width="560"
               height="315"
               src="https://www.youtube.com/embed/8DQ8VwS6NyY"
-              frameborder="0"
+              frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
+              allowFullScreen
             ></iframe>
           </div>
           <div>
@@ -63,9 +63,9 @@ const PersonalJourneyFrame = () => {
               width="560"
               height="315"
               src="https://www.youtube.com/embed/StAzSO75FXg"
-              frameborder="0"
+              frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
+              allowFullScreen
             ></iframe>
           </div>
         </div>

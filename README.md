@@ -87,7 +87,7 @@ https://documenter.getpostman.com/view/32353864/2s9YymFPVM
 https://practice-render-jsss.onrender.com
 
 **Netlify Link**
-https://petseeker.netlify.app
+https://petseeker.netlify.app/
 
 
 
