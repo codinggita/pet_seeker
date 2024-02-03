@@ -18,6 +18,7 @@
   align-self: stretch;
   height: 49px;
   flex-shrink: 0;
+  text-decoration: none;
 }
 .loginButton {
   height: 47px;
@@ -28,6 +29,7 @@
   justify-content: flex-end;
   padding: 0 var(--padding-5xl);
   box-sizing: border-box;
+  text-decoration: none;
 }
 .rectangleVector {
   height: 100%;
@@ -84,6 +86,7 @@
   height: 44px;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   mix-blend-mode: darken;
+  text-decoration: none;
 }
 .magnifyingGlassIconChild {
   position: absolute;

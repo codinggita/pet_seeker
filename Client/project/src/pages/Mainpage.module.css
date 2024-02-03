@@ -16,6 +16,7 @@
 .fRAMEA {
   align-self: stretch;
   display: flex;
+  width:100%;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
@@ -47,7 +48,8 @@
 .mainpageItem {
   position: absolute;
   margin: 0 !important;
-  z-index: 1;
+ 
+  width:100%;
 }
 .headerBar1 {
   width: 100%;

@@ -1,5 +1,4 @@
-import FrameComponent1 from "../components/FrameComponent1";
-//import styles from "./BirdPage.module.css";
+
 
 import styles from "./DOGSPage.module.css";
 import { Link } from 'react-router-dom';

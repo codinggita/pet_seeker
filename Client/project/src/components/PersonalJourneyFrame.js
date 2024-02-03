@@ -8,7 +8,7 @@ const PersonalJourneyFrame = () => {
     <section className={styles.personalJourneyFrame}>
       <div className={styles.articleFrame}>
         <div className={styles.catsArticleFrame}>
-          <Link to="/adopt-form" className={styles.linkStyle}>
+          <Link to="/adopt-form" className={styles.contactUsFrame}>
             <ADOPTBUTTON
               rEHOME="ADOPT"
               propBoxShadow="-4px 4px 0px #7b61ff"
@@ -18,7 +18,7 @@ const PersonalJourneyFrame = () => {
             />
           </Link>
           <div className={styles.contactUsFrame}>
-            <Link to="/donate" className={styles.linkStyle}>
+            <Link to="/donate" className={styles.contactUsFrame}>
               <ADOPTBUTTON
                 rEHOME="DONATE"
                 propBoxShadow="-4px 4px 0px #b9a2f3"
@@ -29,7 +29,7 @@ const PersonalJourneyFrame = () => {
             </Link>
             <div className={styles.contactUsFrameChild} />
           </div>
-          <Link to="/rehome" className={styles.linkStyle}>
+          <Link to="/rehome" className={styles.contactUsFrame}>
             <ADOPTBUTTON
               rEHOME="REHOME"
               propBoxShadow="-4px 4px 0px #b9a2f3"

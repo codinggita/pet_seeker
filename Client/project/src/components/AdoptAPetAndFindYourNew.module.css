@@ -1,5 +1,5 @@
 .adoptAPet {
-  height: 238px;
+  height: 200px;
   flex: 1;
   position: relative;
   display: flex;
@@ -7,7 +7,7 @@
   max-width: 100%;
 }
 .adoptAPetAndFindYourNew {
-  width: 1107px;
+  width: 1107x;
   margin: 0 !important;
   position: absolute;
   top: -229px;
@@ -17,7 +17,7 @@
   align-items: center;
   justify-content: center;
   text-align: justify;
-  font-size: var(--font-size-41xl);
+  font-size: var(--font-size-20xl);
   color: var(--color-mediumblue);
   font-family: var(--font-quando);
 }
