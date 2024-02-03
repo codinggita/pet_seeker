@@ -43,11 +43,14 @@ const PersonalJourneyFrame = () => {
         </div>
         <div className={styles.video}>
           <div>
-            {/* First YouTube video iframe */}
+          <div className="iframe-margin"></div>
+          <div className="iframe-margin"></div>
+          <div className="iframe-margin"></div>
+          <div className="iframe-margin"></div>
             <iframe
               className='gitHubInstagramCircleFaceb1'
               title="Video 1"
-              width="560"
+              width="675"
               height="315"
               src="https://www.youtube.com/embed/8DQ8VwS6NyY"
               frameBorder="0"
@@ -55,12 +58,17 @@ const PersonalJourneyFrame = () => {
               allowFullScreen
             ></iframe>
           </div>
+          <div className="iframe-margin"></div>
+          <div className="iframe-margin"></div>
+          
+       
+
           <div>
-            {/* Second YouTube video iframe */}
+           
             <iframe 
               className='gitHubInstagramCircleFaceb'
               title="Video 2"
-              width="560"
+              width="670"
               height="315"
               src="https://www.youtube.com/embed/StAzSO75FXg"
               frameBorder="0"

@@ -27,21 +27,23 @@
 .mainpageChild,
 .mainpageItem {
   width: 100%;
-  height: 44px;
-  right: 0;
-  left: 0;
-  max-width: 100%;
-  overflow: hidden;
-  flex-shrink: 0;
+  max-width: 100%; /* Ensure the image doesn't exceed its natural size */
+  height: auto; /* Let the browser calculate the height to maintain aspect ratio */
+  position: absolute;
+  margin: 0 !important;
+  bottom: 1302px; /* Adjust as needed */
+  z-index: 1;
 }
 .mainpageChild {
   position: absolute;
-  margin: 0 !important;
+  margin: 0 ;
   bottom: 1302px;
+  width: 100%;
   z-index: 1;
 }
 .mainpageItem {
   bottom: 1772px;
+  
 }
 .frameChild,
 .headerBar1,

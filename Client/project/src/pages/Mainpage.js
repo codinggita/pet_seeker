@@ -15,17 +15,12 @@ const Mainpage = () => {
         <AdoptPet />
       </section>
       <img
-        className={styles.mainpageChild}
-        loading="eager"
-        alt=""
-        src="/rectangle-23.svg"
-      />
-      <img
         className={styles.mainpageItem}
         loading="eager"
         alt=""
         src="/rectangle-23.svg"
       />
+    
       <div className={styles.headerBar1} />
       <section className={styles.contentFrame}>
         <div className={styles.rectangleParent}>
@@ -50,7 +45,7 @@ const Mainpage = () => {
             
               <Link to="/cats-page">
               <img
-                className={styles.frameInner}
+                className={styles.frameItem}
                 loading="eager"
                 alt=""
                 src="/rectangle-8@2x.png"
@@ -58,7 +53,7 @@ const Mainpage = () => {
             </Link>
             <Link to="/bird-page">
               <img
-                className={styles.rectangleIcon}
+                className={styles.frameItem}
                 loading="eager"
                 alt=""
                 src="/rectangle-9@2x.png"

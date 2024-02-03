@@ -27,18 +27,27 @@
   max-height: 100%;
   object-fit: cover;
   min-height: 362px;
+  transition: transform 0.5s ease-in-out;
 }
+
+.petsFrameIcon:hover,
+.petsFrameIcon1:hover,
+.petsFrameIcon2:hover,
+.petsFrameIcon3:hover {
+  transform: scale(1.1); /* Increase the size by 10% on hover, adjust as needed */
+}
+
 .petsFrameIcon1,
 .petsFrameIcon2,
 .petsFrameIcon3 {
-  width: 273px;
+  width: 279px;
 }
 .petsFrameIcon2,
 .petsFrameIcon3 {
   width: 279px;
 }
 .petsFrameIcon3 {
-  width: 273px;
+  width: 279px;
 }
 .adoptButton {
   height: 44px;

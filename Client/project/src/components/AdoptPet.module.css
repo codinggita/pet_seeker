@@ -22,8 +22,8 @@
   height: 100%;
 }
 .frameItem {
-  top: 22px;
-  left: 20px;
+  top: 20px;
+  left: 22px;
   width: 190px;
   height: 160px;
   object-fit: cover;
@@ -45,8 +45,10 @@
 .adoptButtonGroup,
 .rectangleF {
   display: flex;
+  width: 100%;
   align-items: flex-start;
   justify-content: flex-start;
+  width:100%;
 }
 .adoptButtonGroup {
   align-self: stretch;
@@ -58,6 +60,11 @@
   width: 234px;
   flex-direction: row;
   position: relative;
+}
+
+.rectangleFChild{
+  width: 1620px;
+  height: 50px;
 }
 .magnifyingglass1 {
   flex: 1;
@@ -109,7 +116,7 @@
 .searchbar {
   align-self: stretch;
   position: absolute;
-  right: -40px;
+  right: -55px;
   width: 150%;/* Adjust the right value to shift the search bar to the right */
   border-radius: var(--br-mini);
   background-color: var(--color-lavender-200);
@@ -143,6 +150,7 @@
   flex-direction: row;
   justify-content: flex-start;
   max-width: 100%;
+ width: 100%;
 }
 .frameE {
   flex: 1;
@@ -155,6 +163,7 @@
 }
 .rectangleShapeD {
   width: 1402px;
+  
   align-items: flex-start;
   padding: 0 var(--padding-lgi);
   box-sizing: border-box;

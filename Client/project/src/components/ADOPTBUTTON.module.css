@@ -3,9 +3,10 @@
   margin: 0;
 }
 .adpot {
-  height: 72px;
+  height: 30px;
+  width: 300px;
   position: relative;
-  line-height: 32px;
+  line-height: 19px;
   display: inline-block;
 }
 .adoptButton {

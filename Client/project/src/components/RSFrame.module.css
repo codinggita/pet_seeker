@@ -12,7 +12,7 @@
 }
 .rs200 {
   align-self: stretch;
-  height: 150px;
+  height: 225px;
   z-index: 2;
 }
 .label1 {
@@ -76,15 +76,19 @@
   position: relative;
   display: flex;
   align-items: center;
+  
+  align-items: center;
 }
 .rs500 {
   align-self: stretch;
-  height: 150px;
+  height: 225px;
+  right: 40px;
   z-index: 2;
 }
 .label3 {
   height: 24px;
   font-size: var(--font-size-lg);
+  font-weight: 500;
   font-family: var(--smallest-descriptor);
   color: var(--text-primary-white);
   text-align: center;
@@ -151,7 +155,8 @@
 }
 .rs1000 {
   align-self: stretch;
-  height: 150px;
+  right: 85px;
+  height: 250px;
   z-index: 2;
 }
 .label5 {
@@ -223,6 +228,7 @@
 .loginbutton {
   width: 233px;
   height: 44px;
+  text-decoration: none;
   position: relative;
   display: flex;
   align-items: center;
