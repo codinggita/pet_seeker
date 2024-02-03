@@ -5,6 +5,7 @@
   overflow: hidden;
   flex-shrink: 0;
   display: none;
+  text-decoration: none;
 }
 .contactUsFrame {
   width: 311px;
@@ -12,6 +13,8 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  text-decoration: none;
+
 }
 .articleFrame,
 .catsArticleFrame {

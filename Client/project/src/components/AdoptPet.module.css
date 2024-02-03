@@ -23,16 +23,17 @@
 }
 .frameItem {
   top: 22px;
-  left: 19px;
-  width: 198px;
-  height: 188px;
+  left: 20px;
+  width: 190px;
+  height: 160px;
   object-fit: cover;
   z-index: 1;
 }
 .ellipseParent {
-  height: 229px;
+  height: 200px;
   flex: 1;
   position: relative;
+  right : -20px;
 }
 .infoIconsContainer {
   align-self: stretch;
@@ -103,13 +104,18 @@
   display: flex;
   justify-content: center;
   max-width: 100%;
+
 }
 .searchbar {
   align-self: stretch;
+  position: absolute;
+  right: -40px;
+  width: 150%;/* Adjust the right value to shift the search bar to the right */
   border-radius: var(--br-mini);
   background-color: var(--color-lavender-200);
   border: 1px solid var(--color-black);
   box-sizing: border-box;
+  display: flex;
   flex-direction: row;
   align-items: flex-start;
   padding: 0 0 var(--padding-mini);
@@ -121,6 +127,7 @@
   color: var(--label-colors-lc-l-secondary);
   font-family: var(--font-sf-pro-display);
 }
+
 .adoptButton {
   height: 51px;
   width: 791px;
