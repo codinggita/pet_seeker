@@ -168,6 +168,7 @@
 }
 .adoptForm {
   width: 100%;
+  min-height: 100vh;
   position: relative;
   background-color: var(--color-thistle-200);
   overflow: hidden;
