@@ -15,6 +15,7 @@
   align-items: center;
   justify-content: center;
   text-decoration: none;
+  margin-bottom: -40px;
 
 }
 .articleFrame,
@@ -37,6 +38,7 @@
 }
 .personalJourney {
   height: 115px;
+  right:-92px;
   width: 1063px;
   position: relative;
   white-space: pre-wrap;
@@ -45,6 +47,7 @@
   flex-shrink: 0;
   max-width: 100%;
   z-index: 2;
+  bottom:-42px;
 }
 .allAboutCatsFrame {
   width: 1202px;

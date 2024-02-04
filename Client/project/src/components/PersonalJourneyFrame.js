@@ -21,7 +21,7 @@ const PersonalJourneyFrame = () => {
             <Link to="/donate" className={styles.contactUsFrame}>
               <ADOPTBUTTON
                 rEHOME="DONATE"
-                propBoxShadow="-4px 4px 0px #b9a2f3"
+                propBoxShadow="-4px 4px 0px #7b61ff"
                 propWidth="unset"
                 propFlex="1"
                 propFlex1="1"
@@ -32,7 +32,7 @@ const PersonalJourneyFrame = () => {
           <Link to="/rehome" className={styles.contactUsFrame}>
             <ADOPTBUTTON
               rEHOME="REHOME"
-              propBoxShadow="-4px 4px 0px #b9a2f3"
+              propBoxShadow="-4px 4px 0px #7b61ff"
             />
           </Link>
         </div>
