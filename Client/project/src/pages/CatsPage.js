@@ -18,7 +18,7 @@ const CatsPage = () => {
             <div className={styles.findYourPetText}>
               <div className={styles.button30}>
                 <div className={styles.loginbuttonWrapper}>
-                <Link to = "/">
+                <Link to = "/"style={{ textDecoration: 'none' }}>
                 <div className={styles.loginbutton}>Home</div>
                 </Link>
                 </div>

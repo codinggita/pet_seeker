@@ -6,11 +6,13 @@
   position: relative;
   display: flex;
   align-items: center;
+  
 }
 .mostlyAs {
   height: 225px;
   flex: 1;
   z-index: 2;
+  right: 72px;
 }
 .label1 {
   height: 24px;
@@ -18,12 +20,13 @@
   font-weight: 500;
   font-family: var(--smallest-descriptor);
   color: var(--text-primary-white);
-  text-align: center;
-  justify-content: center;
+  text-align: right;
+ 
 }
 .buttonLargeFilledEnab,
 .label {
   overflow: hidden;
+
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -32,6 +35,7 @@
 }
 .buttonLargeFilledEnab {
   flex: 1;
+  
   border-radius: var(--br-7xs);
   background-color: var(--color-plum);
   flex-direction: column;
@@ -43,7 +47,7 @@
   border: 0;
   padding: 0;
   background-color: var(--color-thistle-200);
-  height: 48px;
+  height: 32px;
   margin: 0 !important;
   position: absolute;
   bottom: -13px;
@@ -51,6 +55,11 @@
   border-radius: var(--br-26xl);
   flex-direction: column;
   z-index: 3;
+  left: -50px; /* Remove the left property to reset its position */
+  right: auto; 
+  top: 230px;
+
+  
 }
 .selectlargefilledenabled,
 .textInput,
@@ -58,6 +67,7 @@
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
+  
 }
 .textInput {
   align-self: stretch;
@@ -69,6 +79,7 @@
   flex-direction: column;
   padding: 0 var(--padding-2xs) 0 0;
   box-sizing: border-box;
+  
 }
 .bs,
 .mostly {
@@ -86,6 +97,7 @@
   align-items: center;
   flex-shrink: 0;
   z-index: 2;
+  right: 75px;
 }
 .mostlyBsWrapper {
   align-self: stretch;
@@ -140,6 +152,11 @@
   border-radius: var(--br-26xl);
   flex-direction: column;
   z-index: 2;
+   /* Remove the left property to reset its position */
+  right: auto; 
+  left: 640px;
+  top: 615px;
+  position: absolute;
 }
 .frameGroup,
 .instance {
@@ -169,6 +186,8 @@
   align-self: stretch;
   height: 150px;
   z-index: 2;
+  right: 72px;
+  top: 22px;
 }
 .label5 {
   height: 24px;
@@ -208,6 +227,10 @@
   align-items: flex-start;
   justify-content: flex-start;
   z-index: 2;
+  right: auto; 
+  left: 1120px;
+  top: 612px;
+  position: absolute;
 }
 .enabledButtonLabel {
   height: 48px;

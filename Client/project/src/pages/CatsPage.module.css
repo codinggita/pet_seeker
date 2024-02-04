@@ -198,6 +198,63 @@
   color: var(--color-mediumblue);
   font-family: var(--font-quando);
 }
+
+/* Add the following styles to your existing CSS */
+
+.multiRectanglesItem,
+.multiRectanglesInner,
+.rectangleIcon,
+.multiRectanglesChild1,
+.multiRectanglesChild2 {
+  transition: transform 0.5s ease;
+}
+
+.multiRectanglesItem:hover,
+.multiRectanglesInner:hover,
+.rectangleIcon:hover,
+.multiRectanglesChild1:hover,
+.multiRectanglesChild2:hover {
+  transform: scale(1.2); /* You can adjust the scale factor based on your preference */
+}
+
+/* Add the following styles to your existing styles */
+
+/* Adjust the scale factor and transition duration as needed */
+
+.outerFrameWithRectangles,
+.frameStack,
+.multiRectanglesChild,
+.outerFrameWithRectangles1,
+.outerFrameWithRectangles2,
+.multiRectanglesItem,
+.multiRectanglesInner,
+.rectangleIcon,
+.multiRectanglesChild1,
+.multiRectanglesChild2,
+.outerFrameWithRectangles3,
+.outerFrameWithRectangles4,
+.outerFrameWithRectangles5 {
+  transition: transform 0.5s ease;
+}
+
+.outerFrameWithRectangles:hover,
+.frameStack:hover,
+.multiRectanglesChild:hover,
+.outerFrameWithRectangles1:hover,
+.outerFrameWithRectangles2:hover,
+.multiRectanglesItem:hover,
+.multiRectanglesInner:hover,
+.rectangleIcon:hover,
+.multiRectanglesChild1:hover,
+.multiRectanglesChild2:hover,
+.outerFrameWithRectangles3:hover,
+.outerFrameWithRectangles4:hover,
+.outerFrameWithRectangles5:hover {
+  transform: scale(1.2); /* You can adjust the scale factor based on your preference */
+}
+
+
+
 .catContainerIcon1 {
   height: 1024px;
   width: 102px;

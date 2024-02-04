@@ -29,7 +29,7 @@ const Quiz = () => {
             />
           </div>
           {/* Wrap the content of FrameComponent with Link */}
-          <Link to="/answer-to-quiz">
+          <Link to="/answer-to-quiz"style={{ textDecoration: 'none' }}>
             <FrameComponent />
           </Link>
         </div>
