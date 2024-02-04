@@ -34,7 +34,7 @@ const PlaceholderHolder = ({
         <div className={styles.button26}>
 
           {/* Use Link for navigation */}
-        <Link to="/" className={styles.button26}>
+        <Link to="/"style={{ textDecoration: 'none' }} className={styles.button26}>
           <div className={styles.loginbuttonWrapper}>
             <h3 className={styles.loginbutton}>Back to Home</h3>
           </div>

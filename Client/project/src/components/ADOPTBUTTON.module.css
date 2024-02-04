@@ -20,7 +20,7 @@
   justify-content: flex-end;
   padding: var(--padding-base) 0 var(--padding-13xl) var(--padding-13xl);
   text-align: left;
-  font-size: var(--font-size-36xl);
+  font-size: var(--font-size-26xl);
   color: var(--text-primary-white);
   font-family: var(--font-quando);
 }

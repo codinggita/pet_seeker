@@ -20,7 +20,7 @@ const BirdPage = () => {
             <div className={styles.button31}>
               <div className={styles.findYourPetText}>
 
-               <Link to = "/">
+               <Link to = "/"style={{ textDecoration: 'none' }}>
                 <div className={styles.loginbutton}>Home</div>
                 </Link>
 

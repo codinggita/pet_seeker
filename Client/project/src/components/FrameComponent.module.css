@@ -392,6 +392,7 @@
 }
 .label1 {
   height: 24px;
+  text-decoration: none;
   position: relative;
   font-size: var(--font-size-lg);
   font-weight: 500;
