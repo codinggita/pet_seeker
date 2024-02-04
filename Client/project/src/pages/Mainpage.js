@@ -18,7 +18,7 @@ const Mainpage = () => {
         className={styles.mainpageItem}
         loading="eager"
         alt=""
-        src="/rectangle-23.svg"
+        src="/rectangle-23.png"
       />
     
       <div className={styles.headerBar1} />

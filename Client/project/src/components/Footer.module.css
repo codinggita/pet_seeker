@@ -139,6 +139,7 @@
   padding: var(--padding-7xs) 0 0;
   box-sizing: border-box;
   min-width: 305px;
+    margin-top: auto;
 }
 .adoptAndGetInvolved,
 .frequentlyAskedQuestions {

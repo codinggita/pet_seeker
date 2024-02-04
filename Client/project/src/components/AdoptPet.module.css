@@ -1,9 +1,9 @@
 .rectangleFChild {
   height: 44px;
-  width: 1439px;
+  width: 90%;
   position: absolute;
   margin: 0 !important;
-  right: -1187px;
+  right: -1269px;
   bottom: -31px;
 }
 .frameChild,
@@ -63,7 +63,7 @@
 }
 
 .rectangleFChild{
-  width: 1620px;
+  width: 1750px;
   height: 50px;
 }
 .magnifyingglass1 {

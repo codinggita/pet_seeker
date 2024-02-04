@@ -26,19 +26,19 @@
 }
 .mainpageChild,
 .mainpageItem {
-  width: 100%;
+  width: 150px;
   max-width: 100%; /* Ensure the image doesn't exceed its natural size */
   height: auto; /* Let the browser calculate the height to maintain aspect ratio */
   position: absolute;
   margin: 0 !important;
-  bottom: 1302px; /* Adjust as needed */
+  bottom: 1500px; /* Adjust as needed */
   z-index: 1;
 }
 .mainpageChild {
   position: absolute;
   margin: 0 ;
   bottom: 1302px;
-  width: 100%;
+  width: 150px;
   z-index: 1;
 }
 .mainpageItem {
@@ -51,7 +51,7 @@
   position: absolute;
   margin: 0 !important;
  
-  width:100%;
+  width:0px;
 }
 .headerBar1 {
   width: 100%;
