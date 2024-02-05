@@ -15,6 +15,7 @@ const PersonalJourneyFrame = () => {
               propWidth="311px"
               propFlex="unset"
               propFlex1="1"
+          
             />
           </Link>
           <div className={styles.contactUsFrame}>

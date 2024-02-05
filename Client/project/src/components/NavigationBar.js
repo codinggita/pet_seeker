@@ -7,7 +7,7 @@ const NavigationBar = () => {
     <div className={styles.navigationBar}>
       <div className={styles.rectangleGroupA}>
         <div className={styles.rectangleGroupB}>
-          <h3 className={styles.petseekers}>PETSEEKERS</h3>
+          <h3 className={styles.petseekers}>PetSeeker</h3>
           <div className={styles.button23}>
             <div className={styles.vECTOR}>
             {/* Use Link to navigate to the '/quiz' route */}

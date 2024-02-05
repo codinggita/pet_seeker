@@ -218,6 +218,25 @@ app.post("/animals", (req, res) => {
   res.send("Animal added");
 });
 
+app.post("/login", (req, res) => {
+  const newAnimal = req.body;
+  pets.animals.push(newAnimal);
+  res.send("user added");
+});
+
+app.post("/adopt", (req, res) => {
+  const newAnimal = req.body;
+  pets.animals.push(newAnimal);
+  res.send("user for adopt added");
+});
+
+app.post("/rehome", (req, res) => {
+  const newAnimal = req.body;
+  pets.animals.push(newAnimal);
+  res.send("user for rehome added");
+});
+
+
 // PUT - Modify information of an animal by ID
 app.put("/animals/:animalId", (req, res) => {
   const animalIdToUpdate = parseInt(req.params.animalId);

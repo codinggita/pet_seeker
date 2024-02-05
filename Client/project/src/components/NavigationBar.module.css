@@ -18,6 +18,7 @@
   align-self: stretch;
   height: 49px;
   flex-shrink: 0;
+  
   text-decoration: none;
 }
 .loginButton {
@@ -44,6 +45,7 @@
 }
 .button23 {
   width: 279px;
+  left: -72px;
   background-color: var(--color-thistle-100);
   display: flex;
   flex-direction: row;
