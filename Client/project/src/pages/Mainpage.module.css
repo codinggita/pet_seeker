@@ -131,6 +131,7 @@
 .articlesToTake {
   align-self: stretch;
   height: 115px;
+  left: 57px;
   position: relative;
   white-space: pre-wrap;
   display: flex;
@@ -197,9 +198,17 @@
 }
 @media screen and (max-width: 1325px) {
   .infoFrame {
-    gap: 62px;
+    gap: 32px;
   }
 }
+
+@media screen and (max-width: 1200px) {
+  .infoFrame {
+    gap: 12px;
+
+  }
+}
+
 @media screen and (max-width: 800px) {
   .frameParent {
     gap: var(--gap-lg);
