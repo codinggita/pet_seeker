@@ -16,7 +16,7 @@ import ADOPTFORM from "./pages/ADOPTFORM";
 import Rehome from "./pages/Rehome";
 import Quiz from "./components/Quiz";
 
-function App() {
+function App(props) {
   const action = useNavigationType();
   const location = useLocation();
   const pathname = location.pathname;
@@ -32,6 +32,22 @@ function App() {
     maxHeight: '100vh', // Set a maximum height if needed
     height: '100%', // Set a maximum height if needed
   };
+
+
+  useEffect(() => {
+    const apiKey = 'curl -d "grant_type=client_credentials&client_id={Q5EehZQAkBL8Zxv9NeYi8Y2BaZQRCI7hwbM6vFkxXRczVBYBhQ}&client_secret={4keJVC5mU2iYwMk8l1ePtmbLQVvTlTyArgwghmK3}" https://api.petfinder.com/v2/oauth2/token'; 
+    const apiEndpoint = `https://api.petfinder.com/v2/animals?key=${apiKey}`;
+
+    axios
+      .get(apiEndpoint)
+      .then((response) => {
+        setData(response.data.animals);
+        console.log('API WAS CALLED');
+      })
+      .catch((error) => {
+        console.error('Error fetching data from Petfinder API:', error);
+      });
+  }, []);
 
   useEffect(() => {
     if (action !== "POP") {
@@ -117,6 +133,8 @@ function App() {
       <Route path="/rehome" element={<Rehome />} />
     
     </Routes>
+
+    {console.log("props from parent", props)};
     </div>
     </div>
     
