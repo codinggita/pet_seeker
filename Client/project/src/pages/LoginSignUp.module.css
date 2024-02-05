@@ -3,12 +3,15 @@
   position: relative;
   display: none;
   max-width: 100%;
+ 
+
 }
 .frameChild {
   height: 1024px;
   width: 687px;
   background-color: var(--color-mediumblue);
   z-index: 0;
+  
 }
 .frameItem {
   height: 877px;
@@ -34,18 +37,21 @@
   display: flex;
   align-items: flex-start;
   max-width: 100%;
+  
 }
 .frameParent {
   align-self: stretch;
   flex-direction: column;
   justify-content: flex-start;
   gap: var(--gap-22xl);
+  
 }
 .groupFrame {
   flex: 1;
   flex-direction: row;
   justify-content: space-between;
   gap: var(--gap-xl);
+  
 }
 .loginFrame,
 .rectangleGroup,
@@ -146,6 +152,7 @@
   flex-direction: column;
   justify-content: flex-start;
   padding: var(--padding-2xs) 0 0;
+  bottom: -100px;
 }
 .loginSignup {
   width: 100%;

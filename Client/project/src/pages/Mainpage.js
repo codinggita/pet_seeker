@@ -68,7 +68,7 @@ const Mainpage = () => {
       <section className={styles.videoFrame}>
         <div className={styles.articlesFrame}>
           <div className={styles.articlesToTake}>
-            {" "}
+            {"  "}
             Articles To Take Care Of Your Pets
           </div>
           <div className={styles.infoFrame}>

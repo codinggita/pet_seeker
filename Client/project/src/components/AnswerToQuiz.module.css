@@ -134,6 +134,13 @@
     padding-right: var(--padding-16xl);
     box-sizing: border-box;
   }
+  .frameParent {
+    gap: 58px;
+  }
+  .loginbutton {
+    font-size: var(--font-size-lgi);
+  }
+
 }
 @media screen and (max-width: 725px) {
   .frameParent {

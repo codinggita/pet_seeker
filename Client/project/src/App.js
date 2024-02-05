@@ -23,6 +23,14 @@ function App() {
 
   const hideScrollbarStyle = {
     overflow: 'hidden',
+    margin:0,
+    padding:0,
+    height: '100vh',
+  };
+  const contentContainerStyle = {
+    overflowY: 'auto',  // Enable vertical scrolling
+    maxHeight: '100vh', // Set a maximum height if needed
+    height: '100%', // Set a maximum height if needed
   };
 
   useEffect(() => {
@@ -94,7 +102,9 @@ function App() {
 
   return (
     <div style={hideScrollbarStyle}>
+    < div style={contentContainerStyle}>
     <Routes>
+   
       <Route path="/" element={<Mainpage />} />
       <Route path="/login-signup" element={<LoginSignUp />} />
       <Route path="/bird-page" element={<BirdPage />} />
@@ -105,8 +115,11 @@ function App() {
       <Route path="/dogs-page" element={<DOGSPage />} />
       <Route path="/adopt-form" element={<ADOPTFORM />} />
       <Route path="/rehome" element={<Rehome />} />
+    
     </Routes>
     </div>
+    </div>
+    
   );
 }
 export default App;
