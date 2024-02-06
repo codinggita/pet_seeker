@@ -33,22 +33,6 @@ function App(props) {
     height: '100%', // Set a maximum height if needed
   };
 
-
-  useEffect(() => {
-    const apiKey = 'curl -d "grant_type=client_credentials&client_id={Q5EehZQAkBL8Zxv9NeYi8Y2BaZQRCI7hwbM6vFkxXRczVBYBhQ}&client_secret={4keJVC5mU2iYwMk8l1ePtmbLQVvTlTyArgwghmK3}" https://api.petfinder.com/v2/oauth2/token'; 
-    const apiEndpoint = `https://api.petfinder.com/v2/animals?key=${apiKey}`;
-
-    axios
-      .get(apiEndpoint)
-      .then((response) => {
-        setData(response.data.animals);
-        console.log('API WAS CALLED');
-      })
-      .catch((error) => {
-        console.error('Error fetching data from Petfinder API:', error);
-      });
-  }, []);
-
   useEffect(() => {
     if (action !== "POP") {
       window.scrollTo(0, 0);
