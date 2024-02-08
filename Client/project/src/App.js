@@ -15,6 +15,7 @@ import DOGSPage from "./pages/DOGSPage";
 import ADOPTFORM from "./pages/ADOPTFORM";
 import Rehome from "./pages/Rehome";
 import Quiz from "./components/Quiz";
+import AdoptFillForm from "./pages/AdoptFilledForm";
 
 function App(props) {
   const action = useNavigationType();
@@ -76,6 +77,10 @@ function App(props) {
         title = "";
         metaDescription = "";
         break;
+        case "/adoptfill-form":
+        title = "";
+        metaDescription = "";
+        break;
       case "/rehome":
         title = "";
         metaDescription = "";
@@ -114,6 +119,7 @@ function App(props) {
       <Route path="/cats-page" element={<CatsPage />} />
       <Route path="/dogs-page" element={<DOGSPage />} />
       <Route path="/adopt-form" element={<ADOPTFORM />} />
+      <Route path="/adoptFill-form" element={<AdoptFillForm />} />
       <Route path="/rehome" element={<Rehome />} />
     
     </Routes>

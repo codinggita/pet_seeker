@@ -1,3 +1,4 @@
+import React from "react";
 import PlaceholderHolder from "../components/PlaceholderHolder";
 import FrameComponent3 from "../components/FrameComponent3";
 import TypeLargeStateFilledProp from "../components/TypeLargeStateFilledProp";
@@ -50,8 +51,19 @@ const ADOPTFORM = () => {
         alt=""
         src="/group-3.svg"
       />
+      {/* Add View Users button */}
+      <button className={styles.viewUsersButton} onClick={() => handleViewUsers()}>
+        View Users
+      </button>
     </div>
   );
 };
 
+const handleViewUsers = () => {
+  // Add logic to handle the "View Users" button click
+  console.log("View Users button clicked!");
+  // You can redirect to the users page or display a modal, etc.
+};
+
 export default ADOPTFORM;
+
