@@ -29,48 +29,82 @@ const CatsPage = () => {
         </div>
         <div className={styles.multiRectangles}>
           <div className={styles.rectangleGroup} />
-          <div className={styles.outerFrameWithRectangles} />
+          
+          <img
+            className={styles.outerFrameWithRectangles}
+            loading="eager"
+            alt=""
+            src="/cat12.png"
+          />
           <img
             className={styles.multiRectanglesChild}
             loading="eager"
             alt=""
-            src="/rectangle-341.svg"
+            src="/cat1.png"
           />
-          <div className={styles.outerFrameWithRectangles1} />
-          <div className={styles.outerFrameWithRectangles2} />
+
+          <img
+            className={styles.outerFrameWithRectangles1}
+            loading="eager"
+            alt=""
+            src="/cat2.png"
+          />
+
+          <img
+            className={styles.outerFrameWithRectangles2}
+            loading="eager"
+            alt=""
+            src="/cat3.png"
+          />
+          
           <img
             className={styles.multiRectanglesItem}
             loading="eager"
             alt=""
-            src="/rectangle-341.svg"
+            src="/cat4.png"
           />
           <img
             className={styles.multiRectanglesInner}
             loading="eager"
             alt=""
-            src="/rectangle-34.svg"
+            src="/cat5.png"
           />
           <img
             className={styles.rectangleIcon}
             loading="eager"
             alt=""
-            src="/rectangle-34.svg"
+            src="/cat6.png"
           />
           <img
             className={styles.multiRectanglesChild1}
             loading="eager"
             alt=""
-            src="/rectangle-34.svg"
+            src="/cat7.png"
           />
           <img
             className={styles.multiRectanglesChild2}
             loading="eager"
             alt=""
-            src="/rectangle-341.svg"
+            src="/cat8.png"
           />
-          <div className={styles.outerFrameWithRectangles3} />
-          <div className={styles.outerFrameWithRectangles4} />
-          <div className={styles.outerFrameWithRectangles5} />
+             <img
+            className={styles.outerFrameWithRectangles3}
+            loading="eager"
+            alt=""
+            src="/cat9.png"
+          />
+              <img
+            className={styles.outerFrameWithRectangles4}
+            loading="eager"
+            alt=""
+            src="/cat10.png"
+          />
+             <img
+            className={styles.outerFrameWithRectangles5}
+            loading="eager"
+            alt=""
+            src="/cat11.png"
+          />
         </div>
       </section>
       <img
