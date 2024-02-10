@@ -26,48 +26,93 @@ const DOGSPage = () => {
         </div>
         <div className={styles.mainRectangles}>
           <div className={`${styles.finalRectangle} ${styles.enlargeOnHover}`} />
-          <div className={`${styles.frameStack} ${styles.enlargeOnHover}`} />
+         
+          <img
+            className={`${styles.frameStack} ${styles.enlargeOnHover}`}
+            loading="eager"
+            alt=""
+            src="/dog9.png"
+          />
+
+
           <img
             className={`${styles.mainRectanglesChild} ${styles.enlargeOnHover}`}
             loading="eager"
             alt=""
-            src="/rectangle-341.svg"
+            src="/dog1.png"
           />
-          <div className={`${styles.frameStack1} ${styles.enlargeOnHover}`} />
-          <div className={`${styles.frameStack2} ${styles.enlargeOnHover}`} />
+          
+     
+
+          <img
+            className={`${styles.frameStack1} ${styles.enlargeOnHover}`}
+            loading="eager"
+            alt=""
+            src="/dog8.png"
+          />
+          <img
+            className={`${styles.frameStack2} ${styles.enlargeOnHover}`}
+            loading="eager"
+            alt=""
+            src="/dog7.png"
+          />
+          
+
           <img
             className={`${styles.mainRectanglesItem} ${styles.enlargeOnHover}`}
             loading="eager"
             alt=""
-            src="/rectangle-341.svg"
+            src="/dog2.png"
           />
           <img
             className={`${styles.mainRectanglesInner} ${styles.enlargeOnHover}`}
             loading="eager"
             alt=""
-            src="/rectangle-341.svg"
+            src="/dog3.png"
           />
           <img
             className={`${styles.rectangleIcon} ${styles.enlargeOnHover}`}
             loading="eager"
             alt=""
-            src="/rectangle-341.svg"
+            src="/dog4.png"
           />
           <img
             className={`${styles.mainRectanglesChild1} ${styles.enlargeOnHover}`}
             loading="eager"
             alt=""
-            src="/rectangle-341.svg"
+            src="/dog5.png"
           />
           <img
             className={`${styles.mainRectanglesChild2} ${styles.enlargeOnHover}`}
             loading="eager"
             alt=""
-            src="/rectangle-341.svg"
+            src="/dog6.png"
           />
-          <div className={`${styles.frameStack3} ${styles.enlargeOnHover}`} />
-          <div className={`${styles.frameStack4} ${styles.enlargeOnHover}`} />
-          <div className={`${styles.frameStack5} ${styles.enlargeOnHover}`} />
+          
+          <img
+            className={`${styles.frameStack3} ${styles.enlargeOnHover}`}
+            loading="eager"
+            alt=""
+            src="/dog10.png"
+          />
+
+
+     
+          <img
+            className={`${styles.frameStack4} ${styles.enlargeOnHover}`}
+            loading="eager"
+            alt=""
+            src="/dog11.png"
+          />
+       
+          <img
+            className={`${styles.frameStack5} ${styles.enlargeOnHover}`}
+            loading="eager"
+            alt=""
+            src="/dog12.png"
+          />
+
+
         </div>
       </section>
       <img
