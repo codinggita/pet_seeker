@@ -51,10 +51,7 @@ const ADOPTFORM = () => {
         alt=""
         src="/group-3.svg"
       />
-      {/* Add View Users button */}
-      <button className={styles.viewUsersButton} onClick={() => handleViewUsers()}>
-        View Users
-      </button>
+      
     </div>
   );
 };

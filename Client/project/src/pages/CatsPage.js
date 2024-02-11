@@ -1,7 +1,7 @@
 import styles from "./CatsPage.module.css";
 import { Link } from 'react-router-dom';
 import React from 'react';
-
+import ADOPTFORM from './ADOPTFORM'; // Import your AdoptFormPage component
 
 const CatsPage = () => {
   return (
@@ -18,9 +18,9 @@ const CatsPage = () => {
             <div className={styles.findYourPetText}>
               <div className={styles.button30}>
                 <div className={styles.loginbuttonWrapper}>
-                <Link to = "/"style={{ textDecoration: 'none' }}>
-                <div className={styles.loginbutton}>Home</div>
-                </Link>
+                  <Link to="/" style={{ textDecoration: 'none' }}>
+                    <div className={styles.loginbutton}>Home</div>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -30,81 +30,114 @@ const CatsPage = () => {
         <div className={styles.multiRectangles}>
           <div className={styles.rectangleGroup} />
           
-          <img
-            className={styles.outerFrameWithRectangles}
-            loading="eager"
-            alt=""
-            src="/cat12.png"
-          />
-          <img
-            className={styles.multiRectanglesChild}
-            loading="eager"
-            alt=""
-            src="/cat1.png"
-          />
+          {/* Wrap each image with Link to navigate to AdoptFormPage */}
+          <Link to="/adopt-form">
+            <img
+              className={styles.outerFrameWithRectangles}
+              loading="eager"
+              alt=""
+              src="/cat12.png"
+            />
+          </Link>
 
-          <img
-            className={styles.outerFrameWithRectangles1}
-            loading="eager"
-            alt=""
-            src="/cat2.png"
-          />
+          <Link to="/adopt-form">
+            <img
+              className={styles.multiRectanglesChild}
+              loading="eager"
+              alt=""
+              src="/cat1.png"
+            />
+          </Link>
 
-          <img
-            className={styles.outerFrameWithRectangles2}
-            loading="eager"
-            alt=""
-            src="/cat3.png"
-          />
+          <Link to="/adopt-form">
+            <img
+              className={styles.outerFrameWithRectangles1}
+              loading="eager"
+              alt=""
+              src="/cat2.png"
+            />
+          </Link>
+
+          <Link to="/adopt-form">
+            <img
+              className={styles.outerFrameWithRectangles2}
+              loading="eager"
+              alt=""
+              src="/cat3.png"
+            />
+          </Link>
           
-          <img
-            className={styles.multiRectanglesItem}
-            loading="eager"
-            alt=""
-            src="/cat4.png"
-          />
-          <img
-            className={styles.multiRectanglesInner}
-            loading="eager"
-            alt=""
-            src="/cat5.png"
-          />
-          <img
-            className={styles.rectangleIcon}
-            loading="eager"
-            alt=""
-            src="/cat6.png"
-          />
-          <img
-            className={styles.multiRectanglesChild1}
-            loading="eager"
-            alt=""
-            src="/cat7.png"
-          />
-          <img
-            className={styles.multiRectanglesChild2}
-            loading="eager"
-            alt=""
-            src="/cat8.png"
-          />
-             <img
-            className={styles.outerFrameWithRectangles3}
-            loading="eager"
-            alt=""
-            src="/cat9.png"
-          />
-              <img
-            className={styles.outerFrameWithRectangles4}
-            loading="eager"
-            alt=""
-            src="/cat10.png"
-          />
-             <img
-            className={styles.outerFrameWithRectangles5}
-            loading="eager"
-            alt=""
-            src="/cat11.png"
-          />
+          <Link to="/adopt-form">
+            <img
+              className={styles.multiRectanglesItem}
+              loading="eager"
+              alt=""
+              src="/cat4.png"
+            />
+          </Link>
+
+          <Link to="/adopt-form">
+            <img
+              className={styles.multiRectanglesInner}
+              loading="eager"
+              alt=""
+              src="/cat5.png"
+            />
+          </Link>
+
+          <Link to="/adopt-form">
+            <img
+              className={styles.rectangleIcon}
+              loading="eager"
+              alt=""
+              src="/cat6.png"
+            />
+          </Link>
+
+          <Link to="/adopt-form">
+            <img
+              className={styles.multiRectanglesChild1}
+              loading="eager"
+              alt=""
+              src="/cat7.png"
+            />
+          </Link>
+
+          <Link to="/adopt-form">
+            <img
+              className={styles.multiRectanglesChild2}
+              loading="eager"
+              alt=""
+              src="/cat8.png"
+            />
+          </Link>
+
+          <Link to="/adopt-form">
+            <img
+              className={styles.outerFrameWithRectangles3}
+              loading="eager"
+              alt=""
+              src="/cat9.png"
+            />
+          </Link>
+
+          <Link to="/adopt-form">
+            <img
+              className={styles.outerFrameWithRectangles4}
+              loading="eager"
+              alt=""
+              src="/cat10.png"
+            />
+          </Link>
+
+          <Link to="/adopt-form">
+            <img
+              className={styles.outerFrameWithRectangles5}
+              loading="eager"
+              alt=""
+              src="/cat11.png"
+            />
+          </Link>
         </div>
       </section>
       <img
