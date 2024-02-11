@@ -17,6 +17,7 @@ import Rehome from "./pages/Rehome";
 import Quiz from "./components/Quiz";
 import AdoptFillForm from "./pages/AdoptFilledForm";
 
+
 function App(props) {
   const action = useNavigationType();
   const location = useLocation();
@@ -85,6 +86,7 @@ function App(props) {
         title = "";
         metaDescription = "";
         break;
+        
 
        default 
        :  console.log("No match for this path");
@@ -111,6 +113,7 @@ function App(props) {
     <Routes>
    
       <Route path="/" element={<Mainpage />} />
+      
       <Route path="/login-signup" element={<LoginSignUp />} />
       <Route path="/bird-page" element={<BirdPage />} />
       <Route path="/quiz" element={<Quiz />}/>

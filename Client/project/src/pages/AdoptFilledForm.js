@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from 'axios';
 import PlaceholderHolder from "../components/PlaceholderHolder";
-import FrameComponent3 from "../components/FrameComponent3";
+
 import DeleteAdoptionRecord from "../pages/DeleteAdoptionRecord"; // Import the DeleteAdoptionRecord component
 import styles from "./AdoptFillForm.module.css";
 
@@ -32,15 +32,15 @@ const AdoptFillForm = () => {
           propPadding="0px var(--padding-3xs)"
         />
         <section className={styles.rectangleParent}>
-          <div className={styles.frameChild} />
+         
           <div className={styles.rectangleGroup}>
-            <div className={styles.frameItem} />
+          
             <div className={styles.selectParent}>
               <div className={styles.select}>
-                <FrameComponent3 prop="PET YOU ADOPT" />
+             
               </div>
-              <div className={styles.div}>YOUR NEED TO ADOPT</div>
-              <div className={styles.textBlock}>
+              
+             
                 <div className={styles.tellUsAboutContainer}>
                   <ul>
                     {adoptionData.map((adoption, index) => (
@@ -61,7 +61,7 @@ const AdoptFillForm = () => {
                       </li>
                     ))}
                   </ul>
-                </div>
+             
                 <div className={styles.value}>255 / 225</div>
               </div>
             </div>
