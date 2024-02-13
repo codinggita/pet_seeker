@@ -1,8 +1,18 @@
 # pet_seeker
-**Pranjali Pandey 12114301**
 
-**Project Name: PETSEEKER**
 
+**Api_Detail_PostMan_Link**
+
+https://documenter.getpostman.com/view/32353864/2s9YymFPVM
+
+**Render Link**
+https://pet-seekerr.onrender.com
+
+**Netlify Link**
+https://petseeker.netlify.app/
+ 
+**video link**
+https://flashbackconnect.com/Default.aspx?id=uQCLcTXf-OGf92wuHBNEaQ2
 
 *•	Which problem Project is Solving?*
 
@@ -16,42 +26,7 @@ o	Adopt A Pet (adoptapet.com)
 
 o	Petco (petco.com)
 
-o	PetSmart Charities (petsmartcharities.org)
-
-o	AKC Marketplace (marketplace.akc.org)
-
-o	Craigslist (craigslist.org)
-
-*•	How do you want to solve it?*
-
-•	Streamlined Adoption Process:
-Steps: Simplify the adoption process by implementing a clear and user-friendly interface. Minimize paperwork and ensure that key information about pets is readily available to potential adopters.
-
-•	Comprehensive Pet Listings:
-Steps: Develop a detailed pet listing system that includes essential information such as species, breed, age, health status, and behavior. Utilize high-quality images to give users a clear view of each pet.
-
-•	Effective Search and Filters:
-Steps: Enhance the search functionality to allow users to filter pets based on specific categories like age, size, and species. Implement a location-based search to help users find pets in their area.
-
-•	Engaging Quiz Option:
-Steps: Create a fun and informative quiz that assesses users' preferences, living conditions, and lifestyle. Use the quiz results to recommend pets that align with their criteria.
-
-•	Seamless Adoption and Rehoming Options:
-Steps: Implement a user registration system that allows individuals to adopt or rehome pets directly through the website. Enable direct communication channels between potential adopters and pet owners.
-
-•	Secure Donation Feature:
-Steps: Integrate a secure donation system where users can contribute funds to support the website and, in turn, donate to animal shelters. Provide transparency on how the donated funds are utilized.
-
-•	Educational Content:
-Steps: Develop a robust content section featuring articles and video tutorials on responsible pet ownership, training tips, and health care. Collaborate with experts to provide valuable insights.
-
-•	Visually Appealing Display:
-Steps: Design visually appealing cards to display nearby pets. Include eye-catching images and concise information to capture users' attention and encourage exploration.
-
-•	Heartwarming Journey Stories:
-Steps: Create a carousel or dedicated section for real-life pet adoption success stories. Encourage users to share their experiences, creating a sense of community and inspiration for others.
-
-*•	List of features you want to implement.*
+*•	List of features I implemented.*
 
 o	Search Bar:
 Enables users to easily find pets based on specific criteria, promoting a targeted and efficient search experience.
@@ -79,17 +54,6 @@ Adds a heartwarming element by sharing real-life stories of pet adoptions, creat
 Footer
 
 
-**Api_Detail_PostMan_Link**
 
-https://documenter.getpostman.com/view/32353864/2s9YymFPVM
-
-**Render Link**
-https://pet-seekerr.onrender.com
-
-**Netlify Link**
-https://petseeker.netlify.app/
- 
-**video link**
-https://flashbackconnect.com/Default.aspx?id=uQCLcTXf-OGf92wuHBNEaQ2
 
 
