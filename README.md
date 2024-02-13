@@ -51,7 +51,6 @@ o	Various Display of Pets:
 
 o	Journey Stories:    
 Adds a heartwarming element by sharing real-life stories of pet adoptions, creating a sense of community and inspiration for users.
-Footer
 
 
 
